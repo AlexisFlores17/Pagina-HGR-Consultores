@@ -1,0 +1,110 @@
+$blue: #203864;
+$gold: #BF9000;
+
+header{
+    height: 100px;
+    .inner-header{
+        // background-color: blue;
+        position: relative;
+        z-index: 10;
+        height: 100px;
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        .logo{                
+            font-weight: 700;
+            font-size: 30px;
+            color: $blue;
+            span{
+                color: $gold;            }
+        }
+        .menu{
+            button{
+                border: none ;
+                background: none;
+                outline: none;
+                cursor: pointer;
+                font-size: 0.8rem;
+                color: black;
+            }
+        }
+    }
+
+}
+
+
+//hamburger
+.hamburger-menu{
+    display: none;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    position: fixed ;
+    height: 100%;
+    width: 50%;    
+    .menu-secondary-background-color{
+        background-color: $blue;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        position: fixed ;
+        height: 100%;
+        width: 50%;
+
+        
+    }
+    .menu-layer{
+        // position: relative;
+        background-color: $gold;
+        height: 100%;
+        overflow: hidden;
+        .wrapper{
+            .menu-links{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                top: 200px;
+                nav{
+                    display: block;
+
+                    ul{
+
+                        padding: 0;
+                        
+                        li{
+                            list-style: none;
+                            font-size: 4rem;
+                            font-weight: 500;
+                            cursor: pointer;
+                            height: 135px;
+                            overflow: hidden;
+                            width: 700px;                            
+                            &:hover{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                .aviso{
+                    // color: white;
+                    position: absolute;
+                    bottom: 10px;
+                    margin-top: 16px;
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    cursor: pointer;
+                    &:hover {
+                        color: #fff;
+                      }
+
+
+                }
+            }
+        }
+    }
+}
