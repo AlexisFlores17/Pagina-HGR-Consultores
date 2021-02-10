@@ -5,10 +5,13 @@
     display: flex;
     flex-flow: column nowrap;
     //Prueba
-    height: 180vh;    
+    height: 130vh;    
     background-color:darksalmon;  
 
 }
+
+
+//////////////Titulo/////////////////////////////////////////
 
 .serviciosTitulo{
 
@@ -18,6 +21,9 @@
     margin: 10px;    
     background-color: darkviolet;
 }
+
+
+//////////////Contenido//////////////////////////////////////
 
 .serviciosContenido{
 
@@ -34,6 +40,9 @@
     }
 }
 
+//////////////Quote/////////////////////////////////////////
+
+
 .serviciosQuote{
     
     display: flex;
@@ -44,6 +53,7 @@
     height: 400px;
     background-color: cornflowerblue;
     .serviciosQuoteItem{
+
         //Prueba
         background-color:forestgreen;
     }
