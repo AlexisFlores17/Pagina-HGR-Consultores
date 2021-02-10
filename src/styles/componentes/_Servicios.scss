@@ -1,0 +1,102 @@
+
+
+.serviciosMain{
+    background: white;
+    display: flex;
+    flex-flow: column nowrap;
+    //Prueba
+    height: 170vh;    
+    // background-color:darksalmon;  
+
+}
+
+
+//////////////Titulo/////////////////////////////////////////
+
+.serviciosTitulo{
+
+    font-size: 90px;
+    font-weight: 600;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px; 
+    width: 500px;
+    //Prueba   
+    // background-color: darkviolet;
+}
+
+
+//////////////Contenido//////////////////////////////////////
+
+.serviciosContenido{
+
+    display: flex;
+    flex-flow: column wrap;    
+    margin-right: 30px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px ;
+    //Prueba
+    background-color: brown;
+
+    .serviciosItem{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin: 10px;
+        margin-left: 0px;        
+        //Prueba
+        background-color: deeppink;
+
+        .serviciosMenu{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content:space-between;
+            padding: 20px 0;
+            //prueba
+            background-color: forestgreen;
+        }
+        .serviciosMenuContenido{
+            display: flex;
+            flex-flow: row nowrap;
+            //prueba
+            padding: 40px;
+            padding-left:15px;
+            height: 200px;
+            background-color:gold;
+        }
+
+        .serviciosMenuContenidoTexto{
+            width: 50%;
+        }
+        
+        .serviciosMenuContenidoLista{
+            width: 50%;
+            .MenuListaItem{
+                
+            }
+        }
+    }
+}
+
+//////////////Quote/////////////////////////////////////////
+
+
+.serviciosQuote{
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    //Prueba
+    height: 400px;
+    background-color: cornflowerblue;
+    .serviciosQuoteItem{
+
+        //Prueba
+        background-color:forestgreen;
+    }
+}

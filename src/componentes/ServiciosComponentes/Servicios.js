@@ -6,7 +6,9 @@ export const Servicios = () =>{
 
     return(
         <div className="serviciosMain">
-            <div className="serviciosTitulo">Servicios</div>
+            <div className="serviciosTitulo">
+                Servicios
+            </div>
             <ServiciosContenido />
             <ServiciosQuote />
         </div>
