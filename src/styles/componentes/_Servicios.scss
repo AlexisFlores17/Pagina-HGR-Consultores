@@ -39,8 +39,13 @@
     margin-top: 40px;
     margin-bottom: 20px ;
     //Prueba
-    background-color: brown;
-
+    // background-color: brown;
+    .lineMenu{
+        border-bottom: 3px solid #E5E5E5;
+    }
+    .lineMenuTop{
+        border-top: 3px solid #E5E5E5;
+    }
     .serviciosItem{
         display: flex;
         flex-flow: column nowrap;
@@ -48,8 +53,7 @@
         margin: 10px;
         margin-left: 0px;        
         //Prueba
-        background-color: deeppink;
-
+        // background-color: deeppink;
         .serviciosMenu{
             display: flex;
             flex-flow: row wrap;
@@ -57,30 +61,71 @@
             justify-content:space-between;
             padding: 20px 0;
             //prueba
-            background-color: forestgreen;
+            // background-color: forestgreen;
+            .serviciosMenuTitulo{
+                font-size: 25px;
+                font-weight: 600;
+            }
+            .serviciosMenuIconoCirculo{
+                padding: 5px;
+                background-color: #E5E5E5;
+                border-radius: 50%;
+                .serviciosMenuIcono {
+                    font-size: 30px;
+                    color: black;
+                }
+            }
         }
         .serviciosMenuContenido{
             display: flex;
             flex-flow: row nowrap;
-            //prueba
+            justify-content: space-between;            
             padding: 40px;
             padding-left:15px;
-            height: 200px;
-            background-color:gold;
+            padding-bottom: 100px;
+            //prueba
+
+            // background-color:gold;
         }
 
         .serviciosMenuContenidoTexto{
-            width: 50%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            font-size: 19px;
+            font-weight: 400;
+            width: 45%;
+            //prueba
+            
+            // background-color: khaki;
         }
         
         .serviciosMenuContenidoLista{
-            width: 50%;
-            .MenuListaItem{
-                
+            width: 40%;
+            //prueba
+            // background-color: hotpink;
+            .menuListaItem{
+                display: flex;
+                flex-flow: wrap  nowrap;
+                margin: 10px;
+                padding-bottom: 40px;
+                //prueba
+                // background-color: lightseagreen;
+                .menuListaNombre{
+                    margin-left: 20px;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+                .menuListaNumero{
+                    color: rgba($color: #000000, $alpha: 0.6);
+                    font-size: 15px;
+                    font-weight: 400;
+                }
             }
         }
     }
 }
+
 
 //////////////Quote/////////////////////////////////////////
 
