@@ -6,22 +6,19 @@ export const ServiciosContenido = () =>{
     const [dropDownMenu, setDropDownMenu] = useState(0);
 
     function lista(e,item) {
-        console.log("Hola");
-        console.log(item)
         e.preventDefault();
         switch (item) {
             case 1:
-                if (item===1) {
+                if (dropDownMenu ===1) {
                     setDropDownMenu(0);
                 } else {
-                    
+                    setDropDownMenu(1);
                 }
                 break;
             default:
                 setDropDownMenu(0);
                 break;
         }
-        console.log(dropDownMenu)
     }
 
     return(
