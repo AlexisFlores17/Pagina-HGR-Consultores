@@ -6,10 +6,8 @@
             
             .content{
                 position: absolute;
-                top: 450px;
+                top: 350px;
                 width: 700px;
-                background-color: hotpink;
-                
                 font-style: normal;
                 font-weight: normal;
                 font-size: 60px;
@@ -22,7 +20,9 @@
                     .line{                        
                         width: 500px;   
                         float: left;
-                        border-bottom: 2px solid black;                
+                        border-bottom: 2px solid black;  
+                        position: absolute;
+                        bottom: 0;
                     }
                     .contact{                                        
                         width: 190px;   

@@ -14,7 +14,7 @@ export const Inicio = () =>{
                                 financiera
                             </h5>
                             <div className="bottom-line">
-                                <div className="line">l</div>
+                                <div className="line"></div>
                                 <div className="contact">CONTACTO</div>
                             </div>
                             
