@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import './componentes/indexComponentes';
 @import './responsive/indexResponsive';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,4 +45,8 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+*{
+	font-family: 'Poppins', sans-serif;
 }
