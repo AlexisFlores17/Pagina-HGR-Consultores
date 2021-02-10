@@ -1,11 +1,11 @@
 $azul: #203864;
 $amarillo: #BF9000;
 
-.ejemplo{
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-}
+// .ejemplo{
+//     width: 100%;
+//     height: 100vh;
+//     background-color: white;
+// }
 
 // ---------------- NOSOTROS ----------------------
 
@@ -70,14 +70,15 @@ $amarillo: #BF9000;
 .scroll-container{
     width: 100%;
     display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
     min-height: 100vh;
+    padding-bottom: 80px;
     .columna-derecha{
         color: white;
         display: flex;
         flex-flow: column;
-        padding: 50px 20px 0 20px;
-        position: absolute;
-        right: 0;
+        padding: 50px 50px 0 50px;
         margin-top: -100vh;
         
         h3{
@@ -96,7 +97,7 @@ $amarillo: #BF9000;
     }  
     
     .numero-redondo{
-        // background-color: $azul;
+        background-color: $azul;
         display: flex;
         flex-flow: column;
         font-size: 60px;
