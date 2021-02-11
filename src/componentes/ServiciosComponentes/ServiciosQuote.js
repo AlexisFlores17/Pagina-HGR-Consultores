@@ -6,18 +6,20 @@ export const ServiciosQuote = () =>{
 
         <div className="serviciosQuote">
             <div className="serviciosQuoteItem">
-                <div>
-                    <div>"</div>
-                    <div>
+                <div className="serviciosQuoteTexto">
+                    <div className="serviciosQuoteComilla" >“</div>
+                    <div className="serviciosQuoteContenido" >
                         Lo mejor en contabilidad con expertos especializados...
-                        HGR consultores son verdaderos profesionales.
+                        HGR consultores son verdaderos <span>profesionales.</span>
                     </div>
                 </div>
-                <div>
-                    Alexis Flores
-                </div>
-                <div>
-                    CTO, Light and Sound Disruptive Lab
+                <div className="serviciosQuoteAutor" >
+                    <div className="serviciosQuoteNombre" >
+                        Alexis Flores
+                    </div>
+                    <div className="serviciosQuotePuesto" >
+                        CTO, Light and Sound Disruptive Lab
+                    </div>
                 </div>
             </div>
         </div>
