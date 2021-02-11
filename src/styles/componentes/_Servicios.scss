@@ -5,7 +5,7 @@
     display: flex;
     flex-flow: column nowrap;
     //Prueba
-    height: 170vh;    
+    // height: 200vh;    
     // background-color:darksalmon;  
 
 }
@@ -73,6 +73,15 @@
                 .serviciosMenuIcono {
                     font-size: 30px;
                     color: black;
+                }
+            }
+            .serviciosMenuIconoCirculoDespliege{
+                padding: 5px;
+                background-color: black;
+                border-radius: 50%;
+                .serviciosMenuIconoDespliege {
+                    font-size: 30px;
+                    color: white;
                 }
             }
         }

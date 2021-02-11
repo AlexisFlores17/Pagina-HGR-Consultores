@@ -1,6 +1,6 @@
 import React from 'react';
-import { ServiciosContenido } from './ServiciosContenido';
-import { ServiciosQuote } from './ServiciosQuote';
+import { ServiciosContenido } from './ServiciosComponentes/ServiciosContenido';
+import { ServiciosQuote } from './ServiciosComponentes/ServiciosQuote';
 
 export const Servicios = () =>{
 

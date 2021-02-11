@@ -1,5 +1,12 @@
 import React, {useState} from 'react';
-import { RiArrowDownLine } from "react-icons/ri";
+import { ServiciosItem1 } from './ServiciosItems/ServiciosItem1';
+import { ServiciosItem2 } from './ServiciosItems/ServiciosItem2';
+import { ServiciosItem3 } from './ServiciosItems/ServiciosItem3';
+import { ServiciosItem4 } from './ServiciosItems/ServiciosItem4';
+import { ServiciosItem5 } from './ServiciosItems/ServiciosItem5';
+import { ServiciosItem6 } from './ServiciosItems/ServiciosItem6';
+import { ServiciosItem7 } from './ServiciosItems/ServiciosItem7';
+
 
 export const ServiciosContenido = () =>{
 
@@ -15,6 +22,48 @@ export const ServiciosContenido = () =>{
                     setDropDownMenu(1);
                 }
                 break;
+            case 2:
+                if (dropDownMenu ===2) {
+                    setDropDownMenu(0);
+                } else {
+                    setDropDownMenu(2);
+                }
+            break;
+            case 3:
+                if (dropDownMenu ===3) {
+                    setDropDownMenu(0);
+                } else {
+                    setDropDownMenu(3);
+                }
+                break;
+            case 4:
+                if (dropDownMenu ===4) {
+                    setDropDownMenu(0);
+                } else {
+                    setDropDownMenu(4);
+                }
+                break;
+            case 5:
+                if (dropDownMenu ===5) {
+                    setDropDownMenu(0);
+                } else {
+                    setDropDownMenu(5);
+                }
+                break;
+            case 6:
+                if (dropDownMenu ===6) {
+                    setDropDownMenu(0);
+                } else {
+                    setDropDownMenu(6);
+                }
+                break;
+            case 7:
+                if (dropDownMenu ===7) {
+                    setDropDownMenu(0);
+                } else {
+                    setDropDownMenu(7);
+                }
+                break;
             default:
                 setDropDownMenu(0);
                 break;
@@ -24,54 +73,13 @@ export const ServiciosContenido = () =>{
     return(
       
         <div className="serviciosContenido">
-
-                <div className="serviciosItem lineMenu" >
-                    <div className="serviciosMenu" >
-                        <div className="serviciosMenuTitulo" >Contabilida de personas físicas y morales</div>
-                        <div className="serviciosMenuIconoCirculo" onClick={e=>lista(e,1)}>
-                            <RiArrowDownLine className="serviciosMenuIcono" />
-                        </div>
-                    </div>            
-                    { dropDownMenu ===1 ? 
-                        <div className="serviciosMenuContenido lineMenuTop">
-                            <div className="serviciosMenuContenidoTexto">
-                                <p>
-                                    Todo ente económico debe poseer una contabilidad veraz, sólida, y
-                                    capaz de respaldar información financiera confiable y relevante que
-                                    pueda ser usada para tomar decisiones que definan el rumbo y la
-                                    permanencia del negocio a lo largo del tiempo. Esta información,
-                                    también es utilizada para determinar el correcto cumplimiento de
-                                    diferentes obligaciones.
-                                </p>
-                                <p>
-                                    Asegúrate de que la contabilidad de tu empresa se apegue a la
-                                    normatividad financiera aplicable y cuente con los estados financieros
-                                    adecuados, evita contratiempos y protege tu negocio.
-                                </p>
-                            </div>  
-                            <div className="serviciosMenuContenidoLista">
-                                <div className="menuListaItem lineMenu">
-                                    <div className="menuListaNumero">1</div>
-                                    <div className="menuListaNombre">Estado de situación financiera </div>
-                                </div>  
-                                <div className="menuListaItem lineMenu">
-                                    <div className="menuListaNumero">2</div>
-                                    <div className="menuListaNombre">Estado de resultado integral</div>
-                                </div>  
-                                <div className="menuListaItem lineMenu">
-                                    <div className="menuListaNumero">3</div>
-                                    <div className="menuListaNombre" >Estado de flujos de efectivo</div>
-                                </div>  
-                                <div className="menuListaItem">
-                                    <div className="menuListaNumero">4</div>
-                                    <div className="menuListaNombre">Estado de cambios en el capital contable</div>
-                                </div>    
-                            </div>              
-                        </div>
-                        :<span></span>
-                    }
-                </div>
-                
+            <ServiciosItem1 lista={lista} dropDownMenu={dropDownMenu}/>
+            <ServiciosItem2 lista={lista} dropDownMenu={dropDownMenu}/>
+            <ServiciosItem3 lista={lista} dropDownMenu={dropDownMenu}/>
+            <ServiciosItem4 lista={lista} dropDownMenu={dropDownMenu}/>
+            <ServiciosItem5 lista={lista} dropDownMenu={dropDownMenu}/>
+            <ServiciosItem6 lista={lista} dropDownMenu={dropDownMenu}/>
+            <ServiciosItem7 lista={lista} dropDownMenu={dropDownMenu}/>
         </div>
     );
 }
