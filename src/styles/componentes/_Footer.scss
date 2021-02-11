@@ -1,0 +1,46 @@
+
+
+.footerContenedor{
+    display: flex;
+    flex-flow: column nowrap;
+    //prueba
+    height: 80vh;
+    margin-top: 200px;
+    background-color: #203864;
+}
+
+////////////////////Parte Superior/////////////////////////////
+
+.footerParteSuperior{
+
+display: flex;
+flex-flow: row nowrap;
+//prueba
+height: 80%;
+background-color: yellow;
+
+    .footerSocial{
+    width: 25%;
+    //prueba
+    background-color: cadetblue;
+    }
+    .footerContacto{
+    width: 50%;
+    //prueba
+    background-color: chocolate;
+    }
+    .footerOficina{
+    width: 25%;
+    //prueba
+    background-color: crimson;
+    }
+}
+
+////////////////////PArte Inferior/////////////////////////////
+
+.footerParteInferior{
+
+height: 20%;
+//prueba
+background-color: brown;
+}
