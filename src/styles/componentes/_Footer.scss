@@ -13,34 +13,47 @@
 
 .footerParteSuperior{
 
-display: flex;
-flex-flow: row nowrap;
-//prueba
-height: 80%;
-background-color: yellow;
+    display: flex;
+    flex-flow: row nowrap;
+    //prueba
+    height: 80%;
+    background-color: yellow;
 
-    .footerSocial{
-    width: 25%;
-    //prueba
-    background-color: cadetblue;
-    }
-    .footerContacto{
-    width: 50%;
-    //prueba
-    background-color: chocolate;
-    }
-    .footerOficina{
-    width: 25%;
-    //prueba
-    background-color: crimson;
-    }
+        .footerSocial{
+        width: 25%;
+        //prueba
+        background-color: cadetblue;
+        }
+        .footerContacto{
+        width: 50%;
+        //prueba
+        background-color: chocolate;
+        }
+        .footerOficina{
+        width: 25%;
+        //prueba
+        background-color: crimson;
+        }
 }
 
 ////////////////////PArte Inferior/////////////////////////////
 
 .footerParteInferior{
 
-height: 20%;
-//prueba
-background-color: brown;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    padding: 30px;
+    //prueba
+    background-color: brown;
+    .footerEmpresa{
+        //prueba
+        background-color: cyan;
+    }
+    .footerAvisoPrivacidad{
+        //prueba
+        background-color: darkgoldenrod;
+    }
 }
