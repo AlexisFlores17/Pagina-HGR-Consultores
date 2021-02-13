@@ -6,7 +6,7 @@ export const NosotrosMain = () =>{
             <div className="nosotros-fondo">
                 <div className="sombra-fondo"></div>
                 <div className="nosotros-container">
-                    <div className="col-7 columna-izquierda">
+                    <div className="col-xs-12 col-sm-6 col-md-7 columna-izquierda">
                         <div className="nosotros-titulo">
                             <div className="divider"></div>
                             <h1>Nosotros</h1>
@@ -17,8 +17,11 @@ export const NosotrosMain = () =>{
             </div>
             
             <div className="scroll-container">
-                <div className="col-5 columna-derecha">
-
+                <div className=" col-xs-12 col-sm-6 col-md-5 columna-derecha">
+                    <div className="nosotros-titulo">
+                        <h1>Nosotros</h1>
+                        <p>Asesoría fiscal, contable enfocada en el mejor desarrollo de empresarios a nivel nacional.</p>
+                    </div>
                     <div className="divider"></div>
                     <div className="numero-redondo">1</div>
                     <h3>Mejor desarrollo de empresarios a nivel nacional</h3>

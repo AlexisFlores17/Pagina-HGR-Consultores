@@ -7,7 +7,7 @@ export const Nosotros = () =>{
 
     return(
         <>
-            <div className="ejemplo"></div>
+            {/* <div className="ejemplo"></div> */}
             <NosotrosMain />
             <MisionVision />
             <CuadroAzul /> 
