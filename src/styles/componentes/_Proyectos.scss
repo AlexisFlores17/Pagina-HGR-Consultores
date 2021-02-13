@@ -1,0 +1,116 @@
+
+
+.proyectosContenido{
+
+    display: flex;
+    flex-flow: row nowrap;
+    //prueba
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.proyectosIzquierda{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    width: 50%;
+    //prueba
+    background-color: burlywood;
+    .proyectosPodcast{
+        //prueba
+        background-color: chocolate;
+        width: 50%;
+        .titulo{
+            //prueba
+            height: 20px;
+            background-color: crimson;
+        }
+        .imagen{
+
+            //prueba
+            height: 300px;
+            background-color: cyan;
+        }
+        .descripcion{
+
+            //prueba
+            background-color: darkblue;
+        }
+    }
+}
+
+.proyectosDerecha{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 50%;
+        //prueba
+        background-color: cadetblue;
+        .proyectosFoto{
+            
+            //prueba
+            height: 30%;
+            background-color: darkgoldenrod;
+            .foto{
+               height: 100%; 
+               width: 100%;
+            }
+        }
+        .proyectosInformacion{
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100%;
+            //prueba
+            background-color: darkgreen;
+            .proyectosTexto{
+                display: flex;
+                flex-flow: column;
+                width: 85%;
+                padding: 40px 80px;
+                //prueba
+                background-color: darkorange;
+                .proyectosLogoSpotify{
+                    //prueba
+                    background-color: gray;
+                }
+                .proyectosFiscalizados{
+                    //prueba
+                    background-color: hotpink;
+                    .titulo{
+                        margin: 25px;
+                        margin-left: 0;
+                        font-size: 30px;
+                        font-weight: 300;
+                        background-color: indianred;
+                    }
+                    .texto{
+                        padding: 30px;
+                        padding-right: 70px;
+                        padding-left: 0;
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .proyectosRedes{
+                display: flex;
+                width: 15%;
+                //prueba
+                background-color: darkviolet;
+               
+                .vertical{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    writing-mode: vertical-lr;
+                    transform: rotate(180deg);
+
+                    //prueba
+                    background-color: indianred;
+                    .item{
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+}

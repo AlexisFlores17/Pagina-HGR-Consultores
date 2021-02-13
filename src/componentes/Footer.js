@@ -6,23 +6,30 @@ export const Footer = () =>{
         <div className="footerContenedor">
             <div className="footerParteSuperior" >
                 <div className="footerSocial" >
-                    <div>Social</div>
-                    <div>Linkedin</div>
-                    <div>Youtube</div>
-                    <div>Spotify</div>
-                    <div>Facebook</div>
+                    <div className="social">Social</div>
+                    <div className="redesContenido">
+                        <div className="redes" >Linkedin</div>
+                        <div className="redes" >Youtube</div>
+                        <div className="redes" >Spotify</div>
+                        <div className="redes" >Facebook</div>
+                    </div>
                 </div>
                 <div className="footerContacto" >
-                    <div>Contacto</div>
-                    <div>info@hgrconsultores.com.mx</div>
-                    <div>55 61725993</div>
+                    <div className="footerContactoContenido">
+                        <div className="contacto">Contacto</div>
+                        <div className="datos" >info@hgrconsultores.com.mx</div>
+                        <div className="datos" >55 61725993</div>
+                    </div>
                 </div>
                 <div className="footerOficina" >
-                    <div>Oficina</div>
-                    <div>
-                        Enrique Rébsamen  512 Colonia Narvarte Poniente
-                        C.P. 03020 Alcaldía Benito Juárez
-                        Ciudad de México
+                    <div className="footerOficinaContenido" >
+                        <div className="oficina" >Oficina</div>
+                        <div className="direccion">Enrique Rébsamen  512</div>
+                        <div className="direccion">Colonia Narvarte Poniente</div>
+                        <div className="direccion">C.P. 03020 Alcaldía</div>
+                        <div className="direccion">Benito Juárez</div>
+                        <div className="direccion">Ciudad de México</div>
+                        
                     </div>
                 </div>
             </div>
