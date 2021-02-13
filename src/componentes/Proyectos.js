@@ -1,5 +1,6 @@
 import React from 'react';
 import Foto from "../images/imagenGarin3.png";
+import Fondo from "../images/imagenGarin6.jpg";
 
 export const Proyectos = () =>{
 

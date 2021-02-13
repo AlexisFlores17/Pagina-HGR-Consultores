@@ -1,12 +1,11 @@
-
+$imageFondo: url('../../images/imagenGarin6.jpg');
 
 .proyectosContenido{
 
     display: flex;
     flex-flow: row nowrap;
     //prueba
-    height: 100vh;
-    background-color: blueviolet;
+    // background-color: blueviolet;
 }
 
 .proyectosIzquierda{
@@ -16,11 +15,23 @@
     align-items: center;
     color:white;
     width: 50%;
+    background-image: $imageFondo;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: -620px;
+    background-position-y: 0px;
     //prueba
-    background-color: burlywood;
+    // background-color: burlywood;
     .proyectosPodcast{
+        position: absolute;
+        display: flex;
+        flex-flow:column nowrap;
+        z-index: 1;
+        padding: 40px;
+        padding-left: 70px;
+        padding-right: 70px;
         //prueba
-        background-color: chocolate;
+        // background-color: chocolate;
         width: 50%;
         .titulo{
             //prueba
@@ -46,12 +57,12 @@
         flex-flow: column nowrap;
         width: 50%;
         //prueba
-        background-color: cadetblue;
+        // background-color: cadetblue;
         .proyectosFoto{
             
             //prueba
-            height: 30%;
-            background-color: darkgoldenrod;
+            height: 35%;
+            // background-color: darkgoldenrod;
             .foto{
                height: 100%; 
                width: 100%;
@@ -62,14 +73,15 @@
             flex-flow: row nowrap;
             height: 100%;
             //prueba
-            background-color: darkgreen;
+            background-color: white;
             .proyectosTexto{
                 display: flex;
                 flex-flow: column;
                 width: 85%;
                 padding: 40px 80px;
+                padding-bottom:0 ;
                 //prueba
-                background-color: darkorange;
+                // background-color: darkorange;
                 .proyectosLogoSpotify{
                     //prueba
                     background-color: gray;
@@ -95,9 +107,9 @@
             }
             .proyectosRedes{
                 display: flex;
-                width: 15%;
+                width: 10%;
                 //prueba
-                background-color: darkviolet;
+                // background-color: darkviolet;
                
                 .vertical{
                     display: flex;
@@ -108,7 +120,7 @@
                     //prueba
                     background-color: indianred;
                     .item{
-                        padding: 20px;
+                        padding: 15px;
                     }
                 }
             }
