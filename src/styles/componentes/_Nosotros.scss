@@ -116,6 +116,9 @@ $amarillo: #BF9000;
             font-weight: 300;
             float: right;
             line-height: 25px; 
+            @media screen and (max-width: 575px){
+                width: 100%;
+            }
         }
     }  
     
@@ -297,11 +300,11 @@ $amarillo: #BF9000;
 
 .colaborar-container{
     width: 100%;
-    padding: 20vh 0;
+    padding: 10vh 0 20vh 0;
     background-color: white;
     color: white;
     @media screen and (max-width: 500px){
-        padding: 10vh 0;
+        padding: 0 0 10vh 0;
     }
 }
 
