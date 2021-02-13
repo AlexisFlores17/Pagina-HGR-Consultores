@@ -23,29 +23,32 @@ $imageFondo: url('../../images/imagenGarin6.jpg');
     //prueba
     // background-color: burlywood;
     .proyectosPodcast{
-        position: absolute;
         display: flex;
         flex-flow:column nowrap;
-        z-index: 1;
-        padding: 40px;
-        padding-left: 70px;
-        padding-right: 70px;
+        
         //prueba
-        // background-color: chocolate;
+        background-color: chocolate;
         width: 50%;
         .titulo{
+            font-size: 15px;
+            font-weight: 600;
             //prueba
-            height: 20px;
+            // height: 20px;
             background-color: crimson;
         }
         .imagen{
-
+            
+            .imagenLogo{
+                width: 500px;
+                height: 300px; 
+            }
             //prueba
-            height: 300px;
             background-color: cyan;
         }
         .descripcion{
 
+            font-size: 15px;
+            font-weight: 300;
             //prueba
             background-color: darkblue;
         }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Foto from "../images/imagenGarin3.png";
-import Fondo from "../images/imagenGarin6.jpg";
+import FondoPodcast from "../images/imagenGarin16.jpg";
 
 export const Proyectos = () =>{
 
@@ -9,8 +9,11 @@ export const Proyectos = () =>{
             <div className="proyectosIzquierda">
                 <div className="proyectosPodcast">
                     <div className="titulo">HGR Consultores</div>
-                    <div className="imagen"></div>
-                    <div className="descripcion">Descripcion podcast</div>
+                    <div className="imagen"><img src={FondoPodcast} className="img-fluid imagenLogo"/></div>
+                    <div className="descripcion">
+                        Aquí tocaremos temas interesantes relacionados con todo lo que ocurre
+                        en el mundo de los contadores
+                    </div>
                 </div>
             </div>
             <div className="proyectosDerecha">
