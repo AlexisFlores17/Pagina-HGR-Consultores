@@ -22,7 +22,7 @@ export const ServiciosItem7 = (props) =>{
             { dropDownMenu ===7 ? 
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
-                        <p className="mb-5">
+                        <p>
                         Para poder	tener	mejores	resultados	y	una	permanencia	mucho	más	sólida	en	el	mercado,	las	empresas	necesitan	una	correcta	planeación.	En	la	parte	financiera,	protege	tus	recursosconociendo	los	escenarios	pesimistas,	realistas	y	optimistas	del	mercado.	Estableciendoen	cada	periodo	 una	 rentabilidad,	 liquidez	 y	 solvencia	 mínima	 esperada.	Asegúratede	 conocer	 tus	ciclosde	 cobro	 y	 de	 pago,haciendo	 más	eficientes	tus	recursos.	
                         </p>
                         <p>
