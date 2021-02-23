@@ -1,25 +1,34 @@
-$imageFondo: url('../../images/imagenGarin6.jpg');
+$imageFondoGarin: url('../../images/imagenGarin3.png');
+$imageBackground: url('../../images/imagenGarin17.jpg');
 
 .proyectosContenido{
 
     display: flex;
     flex-flow: row nowrap;
+    height: 100vh;
     //prueba
     // background-color: blueviolet;
 }
+.proyectosPodcastFondo{
+    position: absolute;
+    z-index: -1;
+    background-image: $imageBackground;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 0;
+    height: 100%;
+    width: 50%;
+}
 
 .proyectosIzquierda{
+    z-index: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     color:white;
     width: 50%;
-    background-image: $imageFondo;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position-x: -620px;
-    background-position-y: 0px;
+    background-color: rgba($color: #2f4166, $alpha: 0.5);
     //prueba
     // background-color: burlywood;
     .proyectosPodcast{
@@ -27,30 +36,33 @@ $imageFondo: url('../../images/imagenGarin6.jpg');
         flex-flow:column nowrap;
         
         //prueba
-        background-color: chocolate;
-        width: 50%;
+        // background-color: chocolate;
+        width: 40%;
+
         .titulo{
             font-size: 15px;
             font-weight: 600;
+            margin-bottom: 5px;
             //prueba
             // height: 20px;
-            background-color: crimson;
+            // background-color: crimson;
         }
         .imagen{
             
             .imagenLogo{
-                width: 500px;
-                height: 300px; 
+
             }
             //prueba
-            background-color: cyan;
+            // background-color: cyan;
         }
         .descripcion{
-
+            text-align: center;
             font-size: 15px;
             font-weight: 300;
+            margin-top: 5px;
+            font-size: 13px;
             //prueba
-            background-color: darkblue;
+            // background-color: darkblue;
         }
     }
 }
@@ -62,16 +74,20 @@ $imageFondo: url('../../images/imagenGarin6.jpg');
         //prueba
         // background-color: cadetblue;
         .proyectosFoto{
-            
             //prueba
-            height: 35%;
+            height: 65%;
             // background-color: darkgoldenrod;
             .foto{
-               height: 100%; 
-               width: 100%;
+                width: 100%;
+                height: 100%;
+                background-image: $imageFondoGarin;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 0px -100px;
             }
         }
         .proyectosInformacion{
+            padding-top: 20px;
             display: flex;
             flex-flow: row nowrap;
             height: 100%;
@@ -83,27 +99,38 @@ $imageFondo: url('../../images/imagenGarin6.jpg');
                 width: 85%;
                 padding: 40px 80px;
                 padding-bottom:0 ;
+                padding-top: 20px;
                 //prueba
                 // background-color: darkorange;
                 .proyectosLogoSpotify{
+                    display: flex;
+                    flex-flow: wrap nowrap;
+                    .logoProyectos{
+
+                    }
+                    .textoLogo{
+                        margin-left: 5px;
+                        text-decoration: underline 2px black;
+                    }
                     //prueba
-                    background-color: gray;
+                    // background-color: gray;
                 }
                 .proyectosFiscalizados{
                     //prueba
-                    background-color: hotpink;
+                    // background-color: hotpink;
                     .titulo{
                         margin: 25px;
                         margin-left: 0;
+                        margin-bottom: 0;
                         font-size: 30px;
                         font-weight: 300;
-                        background-color: indianred;
+                        // background-color: indianred;
                     }
                     .texto{
-                        padding: 30px;
-                        padding-right: 70px;
+                        width: 80%;
+                        margin-top: 25px;
                         padding-left: 0;
-                        font-size: 15px;
+                        font-size: 14px;
                         font-weight: 300;
                     }
                 }
@@ -121,9 +148,12 @@ $imageFondo: url('../../images/imagenGarin6.jpg');
                     transform: rotate(180deg);
 
                     //prueba
-                    background-color: indianred;
+                    // background-color: indianred;
                     .item{
-                        padding: 15px;
+                        font-weight: bold;
+                        font-size: 12px;
+                        margin: 15px;
+                        text-decoration: underline 1px black;
                     }
                 }
             }
