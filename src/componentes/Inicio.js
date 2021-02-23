@@ -1,13 +1,15 @@
 import React from 'react';
 import {Header} from './Header'
+import Pictures from "./Pictures";
 export const Inicio = () =>{
 
     return(
-        <div className="inicio">
+        <div className="inicio" >
             <div className="container" >
-                <div className="wrapper">
-                    <div className="home" >
-                        <div className="content">
+                <div className="wrapper" >
+                    <div className="home">
+                        <Pictures />
+                        <div className="content" >
                             <h5>
                                 Servicios y asesoría 
                                 contable, fiscal y 
@@ -16,9 +18,7 @@ export const Inicio = () =>{
                             <div className="bottom-line">
                                 <div className="line"></div>
                                 <div className="contact">CONTACTO</div>
-                            </div>
-                            
-                            
+                            </div>                                                
                         </div>                        
                         
                     </div>
