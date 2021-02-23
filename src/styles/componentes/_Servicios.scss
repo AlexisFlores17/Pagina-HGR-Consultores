@@ -270,7 +270,6 @@
     justify-content: center;
     align-items: center;
     padding: 120px 20px;
-
     //Prueba
     // height: 400px;
     
@@ -279,11 +278,16 @@
 
         display: flex;
         flex-flow: column nowrap;
-        width: 50%;
+        width: 60%;
         height: 70%;
         //Prueba
         // background-color:forestgreen;
-
+        @media screen and (max-width: 1210px){
+            width: 70%;
+        }
+        @media screen and (max-width: 810px){
+            width: 80%;
+        }
         .serviciosQuoteTexto{
             color: white;
             display: flex;
@@ -293,6 +297,15 @@
                 font-size: 120px;
                 font-weight: 400;
                 padding-right: 10px;
+                @media screen and (max-width: 950px){
+                    font-size: 100px;
+                }
+                @media screen and (max-width: 810px){
+                    font-size: 80px;
+                }
+                @media screen and (max-width: 790px){
+                    font-size: 70px;
+                }
             }
             .serviciosQuoteContenido{
                 padding-top: 8px;
@@ -301,6 +314,19 @@
                 line-height: 50px;
                 span{
                     font-weight: bold;
+                }
+                @media screen and (max-width: 950px){
+                    padding-top: 5px;
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+                @media screen and (max-width: 810px){
+                    font-size: 22px;
+                    padding-top: 0px;
+                    line-height: 30px;
+                }
+                @media screen and (max-width: 790px){
+                    font-size: 20px;
                 }
             }
         }
@@ -315,7 +341,12 @@
             font-weight: 400;
             //prueba
             // background-color: blue;
-            
+            @media screen and (max-width: 950px){
+                margin-left: 50px;
+            }
+            @media screen and (max-width: 790px){
+                margin-left: 40px;
+            }
             .serviciosQuoteNombre{
                 color: white;
                 margin-bottom: 8px;

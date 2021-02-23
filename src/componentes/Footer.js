@@ -34,7 +34,8 @@ export const Footer = () =>{
                 </div>
             </div>
             <div className="footerParteInferior" >
-                <div className="footerEmpresa" >&copy; 2021 LSD Lab </div>
+                <div className="footerEmpresa" >&copy; {new Date().getFullYear()} HGR consultores </div>
+                <div className="footerEmpresa" >Suported by Light & Sound Disruptive Lab </div>
                 <div className="footerAvisoPrivacidad" > Aviso de Privacidad</div>
             </div>
         </div>

@@ -5,7 +5,7 @@ export const ServiciosQuote = () =>{
     return(
 
         <div className="serviciosQuote">
-            <div className="serviciosQuoteItem col-sm-6 col-12">
+            <div className="serviciosQuoteItem">
                 <div className="serviciosQuoteTexto">
                     <div className="serviciosQuoteComilla" >“</div>
                     <div className="serviciosQuoteContenido" >
