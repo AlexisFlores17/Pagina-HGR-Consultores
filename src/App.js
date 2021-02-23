@@ -1,12 +1,17 @@
+import { useSelector } from "react-redux";
+
 import {Header}     from "./componentes/Header";
 import {Nosotros}   from "./componentes/Nosotros";
-import {Servicios}  from "./componentes/ServiciosComponentes/Servicios";
+import {Servicios}  from "./componentes/Servicios";
 import {Proyectos}  from "./componentes/Proyectos";
 import {Contacto}   from "./componentes/Contacto";
 import {Footer}     from "./componentes/Footer";
-import {Inicio}     from "./componentes/Inicio";
+import { Inicio } from "./componentes/Inicio";
 
 function App() {
+
+  const state = useSelector(state => state.contactoReducer)
+
   return (
     <div className="App">
       <Header />
@@ -14,7 +19,9 @@ function App() {
       <Nosotros />
       <Servicios />
       <Proyectos />
-      <Contacto />
+      { state.abierto 
+        && <Contacto />
+      }
       <Footer />
     </div>
   );

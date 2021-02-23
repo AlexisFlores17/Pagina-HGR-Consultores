@@ -1,0 +1,161 @@
+$imageFondoGarin: url('../../images/imagenGarin3.png');
+$imageBackground: url('../../images/imagenGarin17.jpg');
+
+.proyectosContenido{
+
+    display: flex;
+    flex-flow: row nowrap;
+    height: 110vh;
+    //prueba
+    // background-color: blueviolet;
+}
+.proyectosPodcastFondo{
+    position: absolute;
+    z-index: -1;
+    background-image: $imageBackground;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 0;
+    height: 110%;
+    width: 50%;
+}
+
+.proyectosIzquierda{
+    z-index: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    width: 50%;
+    background-color: rgba($color: #2f4166, $alpha: 0.7);
+    //prueba
+    // background-color: burlywood;
+    .proyectosPodcast{
+        display: flex;
+        flex-flow:column nowrap;
+        
+        //prueba
+        // background-color: chocolate;
+        width: 40%;
+
+        .titulo{
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            //prueba
+            // height: 20px;
+            // background-color: crimson;
+        }
+        .imagen{
+            
+            .imagenLogo{
+
+            }
+            //prueba
+            // background-color: cyan;
+        }
+        .descripcion{
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 5px;
+            //prueba
+            // background-color: darkblue;
+        }
+    }
+}
+
+.proyectosDerecha{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 50%;
+        //prueba
+        // background-color: cadetblue;
+        .proyectosFoto{
+            //prueba
+            height: 35%;
+            .foto{
+                width: 100%;
+                height: 100%;
+                background-image: $imageFondoGarin;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 0px -100px;
+            }
+        }
+        .proyectosInformacion{
+            padding-top: 20px;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 65%;
+            //prueba
+            background-color: white;
+            .proyectosTexto{
+                display: flex;
+                flex-flow: column;
+                width: 85%;
+                padding: 40px 80px;
+                padding-bottom:0 ;
+                padding-top: 20px;
+                //prueba
+                // background-color: darkorange;
+                .proyectosLogoSpotify{
+                    display: flex;
+                    flex-flow: wrap nowrap;
+                    .logoProyectos{
+
+                    }
+                    .textoLogo{
+                        margin-left: 5px;
+                        text-decoration: underline 2px black;
+                    }
+                    //prueba
+                    // background-color: gray;
+                }
+                .proyectosFiscalizados{
+                    //prueba
+                    // background-color: hotpink;
+                    .titulo{
+                        margin: 25px;
+                        margin-left: 0;
+                        margin-bottom: 0;
+                        font-size: 35px;
+                        font-weight: 600;
+                        // background-color: indianred;
+                    }
+                    .texto{
+                        width: 80%;
+                        margin-top: 25px;
+                        padding-left: 0;
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .proyectosRedes{
+                display: flex;
+                width: 10%;
+                //prueba
+                // background-color: darkviolet;
+               
+                .vertical{
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: flex-start;
+                    writing-mode: vertical-lr;
+                    transform: rotate(180deg);
+
+                    //prueba
+                    // background-color: indianred;
+                    .item{
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin: 15px;
+                        text-decoration: underline 1px black;
+                    }
+                }
+            }
+        }
+}
