@@ -15,14 +15,15 @@
 
 .serviciosTitulo{
 
-    font-size: 90px;
+    font-size: 75px;
     font-weight: 600;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     margin-top: 200px; 
-    width: 500px;
+    margin-left: 10px;
+    width: 400px;
     //Prueba   
     // background-color: darkviolet;
 }
@@ -63,7 +64,7 @@
             //prueba
             // background-color: forestgreen;
             .serviciosMenuTitulo{
-                font-size: 25px;
+                font-size: 23px;
                 font-weight: 600;
             }
             .serviciosMenuIconoCirculo{
@@ -166,13 +167,13 @@
             flex-flow: row nowrap;
             .serviciosQuoteComilla{
                 font-family: 'Prata'!important;
-                font-size: 130px;
+                font-size: 120px;
                 font-weight: 400;
                 padding-right: 10px;
             }
             .serviciosQuoteContenido{
                 padding-top: 8px;
-                font-size: 35px;
+                font-size: 30px;
                 font-weight: 300;
                 line-height: 50px;
                 span{

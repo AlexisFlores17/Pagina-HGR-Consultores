@@ -8,7 +8,7 @@ export const ServiciosItem6 = (props) =>{
 
         <div className="serviciosItem lineMenu" >
             <div className="serviciosMenu" >
-                <div className="serviciosMenuTitulo" >Elaboración de proyectos financieros</div>
+                <div className="serviciosMenuTitulo" >Presupuestos anuales</div>
                 {dropDownMenu ===6 ? 
                     <div className="serviciosMenuIconoCirculoDespliege" onClick={e=>lista(e,6)}>         
                         <RiArrowUpLine className="serviciosMenuIconoDespliege" />
@@ -19,7 +19,7 @@ export const ServiciosItem6 = (props) =>{
                     </div>
                 }
             </div>            
-            { dropDownMenu ===6 ? 
+            {/* { dropDownMenu ===6 ? 
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
                         <p>
@@ -56,7 +56,7 @@ export const ServiciosItem6 = (props) =>{
                     </div>              
                 </div>
                 :<span></span>
-            }
+            } */}
         </div>
     );
 }

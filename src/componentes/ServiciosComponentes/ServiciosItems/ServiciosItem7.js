@@ -22,36 +22,29 @@ export const ServiciosItem7 = (props) =>{
             { dropDownMenu ===7 ? 
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
-                        <p>
-                            Todo ente económico debe poseer una contabilidad veraz, sólida, y
-                            capaz de respaldar información financiera confiable y relevante que
-                            pueda ser usada para tomar decisiones que definan el rumbo y la
-                            permanencia del negocio a lo largo del tiempo. Esta información,
-                            también es utilizada para determinar el correcto cumplimiento de
-                            diferentes obligaciones.
+                        <p className="mb-5">
+                        Para poder	tener	mejores	resultados	y	una	permanencia	mucho	más	sólida	en	el	mercado,	las	empresas	necesitan	una	correcta	planeación.	En	la	parte	financiera,	protege	tus	recursosconociendo	los	escenarios	pesimistas,	realistas	y	optimistas	del	mercado.	Estableciendoen	cada	periodo	 una	 rentabilidad,	 liquidez	 y	 solvencia	 mínima	 esperada.	Asegúratede	 conocer	 tus	ciclosde	 cobro	 y	 de	 pago,haciendo	 más	eficientes	tus	recursos.	
                         </p>
                         <p>
-                            Asegúrate de que la contabilidad de tu empresa se apegue a la
-                            normatividad financiera aplicable y cuente con los estados financieros
-                            adecuados, evita contratiempos y protege tu negocio.
+                        En	la	parte	fiscal,conocey	planealos	impuestos	que	vas	a	pagar	en	cada	periodo	del	año,así	como	en	el	ejercicio	completo.	Protege	así	la	liquidez	 del	 negocio,	creando	 estrategias	 que	 te	 permitan	 pagarlo	justo	a	las	autoridadese	incluso,	tener	saldos	a favor
                         </p>
                     </div>  
                     <div className="serviciosMenuContenidoLista">
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">1</div>
-                            <div className="menuListaNombre">Estado de situación financiera </div>
+                            <div className="menuListaNombre">Cultura preventiva </div>
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">2</div>
-                            <div className="menuListaNombre">Estado de resultado integral</div>
+                            <div className="menuListaNombre">Mitigacion de riesgos</div>
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">3</div>
-                            <div className="menuListaNombre" >Estado de flujos de efectivo</div>
+                            <div className="menuListaNombre" >Control de liquidez</div>
                         </div>  
                         <div className="menuListaItem">
                             <div className="menuListaNumero">4</div>
-                            <div className="menuListaNombre">Estado de cambios en el capital contable</div>
+                            <div className="menuListaNombre">Eficencia de recursos financieros</div>
                         </div>    
                     </div>              
                 </div>

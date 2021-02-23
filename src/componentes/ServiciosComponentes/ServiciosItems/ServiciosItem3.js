@@ -23,35 +23,32 @@ export const ServiciosItem3 = (props) =>{
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
                         <p>
-                            Todo ente económico debe poseer una contabilidad veraz, sólida, y
-                            capaz de respaldar información financiera confiable y relevante que
-                            pueda ser usada para tomar decisiones que definan el rumbo y la
-                            permanencia del negocio a lo largo del tiempo. Esta información,
-                            también es utilizada para determinar el correcto cumplimiento de
-                            diferentes obligaciones.
+                        Si	bien	la	mayoría	de	las	personastiene	identificado	al	SAT	como	un	ente	al	que	hay	que	tenerlecuidado	e	incluso	miedo,	es	el	IMSS	el	quepuede	superar	cualquier	expectativa.
                         </p>
                         <p>
-                            Asegúrate de que la contabilidad de tu empresa se apegue a la
-                            normatividad financiera aplicable y cuente con los estados financieros
-                            adecuados, evita contratiempos y protege tu negocio.
+                        Toda	empresa	o	persona	física	que	tenga	empleados	debe	de	calcular	y	enterar	de	manera	perfecta	todas	sus	obligaciones	en	materia	laboral	y	de	seguridad	social.	Ten	la	certeza	 de	 que	 estás	 cumpliendo	con	 las	 mismas	 y	 evita	 problemas	para	 tu	 negocio como	pueden	 ser	demandas	 laborales o multas considerables.
                         </p>
                     </div>  
                     <div className="serviciosMenuContenidoLista">
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">1</div>
-                            <div className="menuListaNombre">Estado de situación financiera </div>
+                            <div className="menuListaNombre">Enfermedades	y	maternidad </div>
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">2</div>
-                            <div className="menuListaNombre">Estado de resultado integral</div>
+                            <div className="menuListaNombre">Invalidez	y	vida</div>
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">3</div>
-                            <div className="menuListaNombre" >Estado de flujos de efectivo</div>
-                        </div>  
-                        <div className="menuListaItem">
+                            <div className="menuListaNombre" >Retiro,	cesantía	en	edad	avanzada y vejez</div>
+                        </div> 
+                        <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">4</div>
-                            <div className="menuListaNombre">Estado de cambios en el capital contable</div>
+                            <div className="menuListaNombre" >Guarderías	y	prestaciones	sociales</div>
+                        </div>   
+                        <div className="menuListaItem">
+                            <div className="menuListaNumero">5</div>
+                            <div className="menuListaNombre">Riesgos	de	trabajo</div>
                         </div>    
                     </div>              
                 </div>

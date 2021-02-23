@@ -5,7 +5,7 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
 
     display: flex;
     flex-flow: row nowrap;
-    height: 100vh;
+    height: 110vh;
     //prueba
     // background-color: blueviolet;
 }
@@ -16,7 +16,7 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 40% 0;
-    height: 100%;
+    height: 110%;
     width: 50%;
 }
 
@@ -28,7 +28,7 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
     align-items: center;
     color:white;
     width: 50%;
-    background-color: rgba($color: #2f4166, $alpha: 0.5);
+    background-color: rgba($color: #2f4166, $alpha: 0.7);
     //prueba
     // background-color: burlywood;
     .proyectosPodcast{
@@ -40,7 +40,7 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
         width: 40%;
 
         .titulo{
-            font-size: 15px;
+            font-size: 17px;
             font-weight: 600;
             margin-bottom: 5px;
             //prueba
@@ -57,10 +57,9 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
         }
         .descripcion{
             text-align: center;
-            font-size: 15px;
-            font-weight: 300;
+            font-size: 14px;
+            font-weight: 400;
             margin-top: 5px;
-            font-size: 13px;
             //prueba
             // background-color: darkblue;
         }
@@ -75,8 +74,7 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
         // background-color: cadetblue;
         .proyectosFoto{
             //prueba
-            height: 65%;
-            // background-color: darkgoldenrod;
+            height: 35%;
             .foto{
                 width: 100%;
                 height: 100%;
@@ -90,7 +88,7 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
             padding-top: 20px;
             display: flex;
             flex-flow: row nowrap;
-            height: 100%;
+            height: 65%;
             //prueba
             background-color: white;
             .proyectosTexto{
@@ -122,15 +120,15 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                         margin: 25px;
                         margin-left: 0;
                         margin-bottom: 0;
-                        font-size: 30px;
-                        font-weight: 300;
+                        font-size: 35px;
+                        font-weight: 600;
                         // background-color: indianred;
                     }
                     .texto{
                         width: 80%;
                         margin-top: 25px;
                         padding-left: 0;
-                        font-size: 14px;
+                        font-size: 16px;
                         font-weight: 300;
                     }
                 }
@@ -142,8 +140,10 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                 // background-color: darkviolet;
                
                 .vertical{
+                    margin-bottom: 20px;
                     display: flex;
                     flex-flow: row nowrap;
+                    align-items: flex-start;
                     writing-mode: vertical-lr;
                     transform: rotate(180deg);
 
@@ -151,7 +151,7 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                     // background-color: indianred;
                     .item{
                         font-weight: bold;
-                        font-size: 12px;
+                        font-size: 14px;
                         margin: 15px;
                         text-decoration: underline 1px black;
                     }

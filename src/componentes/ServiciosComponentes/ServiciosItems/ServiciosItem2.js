@@ -23,36 +23,33 @@ export const ServiciosItem2 = (props) =>{
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
                         <p>
-                            Todo ente económico debe poseer una contabilidad veraz, sólida, y
-                            capaz de respaldar información financiera confiable y relevante que
-                            pueda ser usada para tomar decisiones que definan el rumbo y la
-                            permanencia del negocio a lo largo del tiempo. Esta información,
-                            también es utilizada para determinar el correcto cumplimiento de
-                            diferentes obligaciones.
+                        Es	una	realidad	que	lo	único	seguro	que	tenemos	es	la	muerte	y	los	impuestos...	y	muchos	le	tememos	más	a	los	impuestos.	Todo	 negocio	 debe estar	 blindado	 contra	las	 autoridades	 fiscales,	 y	esto	se	logra	únicamente	pagando	de	manera	correcta	y	oportuna	todo	aquel	 impuesto	 aplicable	al	 mismo	 negocio.¿Conozco	los	 impuestos	que	tengo	que	pagar	por	cada	operación	que	realizo?	¿Estaré	exento	de	pagar alguno?
                         </p>
                         <p>
-                            Asegúrate de que la contabilidad de tu empresa se apegue a la
-                            normatividad financiera aplicable y cuente con los estados financieros
-                            adecuados, evita contratiempos y protege tu negocio.
+                        Evita	recargos,	sanciones	y	multas	que	pueden	llevar	a	tu	negocio	a	la	bancarrota	y	a	tu	patrimonio	a	un	hundimiento	irreversible
                         </p>
                     </div>  
                     <div className="serviciosMenuContenidoLista">
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">1</div>
-                            <div className="menuListaNombre">Estado de situación financiera </div>
+                            <div className="menuListaNombre">	Declaraciones	mensuales </div>
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">2</div>
-                            <div className="menuListaNombre">Estado de resultado integral</div>
+                            <div className="menuListaNombre">	Declaración	anual</div>
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">3</div>
-                            <div className="menuListaNombre" >Estado de flujos de efectivo</div>
+                            <div className="menuListaNombre" >	Declaraciones	informativa</div>
                         </div>  
-                        <div className="menuListaItem">
+                        <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">4</div>
-                            <div className="menuListaNombre">Estado de cambios en el capital contable</div>
-                        </div>    
+                            <div className="menuListaNombre">Impuestos	federales	(IVA,	ISR,	IEPS	entre otros)</div>
+                        </div>
+                        <div className="menuListaItem">
+                            <div className="menuListaNumero">5</div>
+                            <div className="menuListaNombre">Impuestos	locales	(Nómina,	hospedaje,	entre	otros)</div>
+                        </div>        
                     </div>              
                 </div>
                 :<span></span>

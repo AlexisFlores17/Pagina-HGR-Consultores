@@ -23,35 +23,17 @@ export const ServiciosItem5 = (props) =>{
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
                         <p>
-                            Todo ente económico debe poseer una contabilidad veraz, sólida, y
-                            capaz de respaldar información financiera confiable y relevante que
-                            pueda ser usada para tomar decisiones que definan el rumbo y la
-                            permanencia del negocio a lo largo del tiempo. Esta información,
-                            también es utilizada para determinar el correcto cumplimiento de
-                            diferentes obligaciones.
-                        </p>
-                        <p>
-                            Asegúrate de que la contabilidad de tu empresa se apegue a la
-                            normatividad financiera aplicable y cuente con los estados financieros
-                            adecuados, evita contratiempos y protege tu negocio.
+                        Todas	 las	 empresas	 cuentan	 con	 un	 historial,	 activos	 fijos,	 activos	intangibles,	protección	 industrial,beneficios	 económicos	 esperados,riesgos	 esperados,entre	 algunos	 otros	 factores	 dentro	 de	 la	información	financieraque	pueden	generar	una	variación	importante	del	valorde	mercadoque	tienela	organización,	ya	sea	para	adquirircapital	o	para	ser	vendidaa	un	tercero
                         </p>
                     </div>  
                     <div className="serviciosMenuContenidoLista">
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">1</div>
-                            <div className="menuListaNombre">Estado de situación financiera </div>
-                        </div>  
-                        <div className="menuListaItem lineMenu">
-                            <div className="menuListaNumero">2</div>
-                            <div className="menuListaNombre">Estado de resultado integral</div>
-                        </div>  
-                        <div className="menuListaItem lineMenu">
-                            <div className="menuListaNumero">3</div>
-                            <div className="menuListaNombre" >Estado de flujos de efectivo</div>
+                            <div className="menuListaNombre">Flujos de efectivo descontados </div>
                         </div>  
                         <div className="menuListaItem">
-                            <div className="menuListaNumero">4</div>
-                            <div className="menuListaNombre">Estado de cambios en el capital contable</div>
+                            <div className="menuListaNumero">2</div>
+                            <div className="menuListaNombre">Multiplos</div>
                         </div>    
                     </div>              
                 </div>

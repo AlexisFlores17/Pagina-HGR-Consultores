@@ -8,7 +8,8 @@ export const ServiciosItem4 = (props) =>{
 
         <div className="serviciosItem lineMenu" >
             <div className="serviciosMenu" >
-                <div className="serviciosMenuTitulo" >Presupuestos anuales</div>
+                <div className="serviciosMenuTitulo" >Elaboración de proyectos financieros
+</div>
                 {dropDownMenu ===4 ? 
                     <div className="serviciosMenuIconoCirculoDespliege" onClick={e=>lista(e,4)}>         
                         <RiArrowUpLine className="serviciosMenuIconoDespliege" />
@@ -23,35 +24,32 @@ export const ServiciosItem4 = (props) =>{
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
                         <p>
-                            Todo ente económico debe poseer una contabilidad veraz, sólida, y
-                            capaz de respaldar información financiera confiable y relevante que
-                            pueda ser usada para tomar decisiones que definan el rumbo y la
-                            permanencia del negocio a lo largo del tiempo. Esta información,
-                            también es utilizada para determinar el correcto cumplimiento de
-                            diferentes obligaciones.
+                        ¿Tienes	un	nuevo	proyectode	inversióno	necesitas	presupuestarlos	resultados	 de	 tu	 actual	 proyecto?Organiza	 los	 recursos	 humanos,	materiales	y	financieros	con	los	que	cuentas	para	llegar	a	los	objetivos	y	 metas	de	 este.
                         </p>
                         <p>
-                            Asegúrate de que la contabilidad de tu empresa se apegue a la
-                            normatividad financiera aplicable y cuente con los estados financieros
-                            adecuados, evita contratiempos y protege tu negocio.
+                        Conoce	las	 diferentes	razonesfinancieras	de	 tu	proyecto,	las	tasas	de	descuento,	el	valor	presente	neto,	entre	algunos	otros	indicadores	que	podrán	determinar	el	rumbo del negocio
                         </p>
                     </div>  
                     <div className="serviciosMenuContenidoLista">
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">1</div>
-                            <div className="menuListaNombre">Estado de situación financiera </div>
+                            <div className="menuListaNombre">Inicia:	Crea	o	cubre	una	necesidad </div>
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">2</div>
-                            <div className="menuListaNombre">Estado de resultado integral</div>
+                            <div className="menuListaNombre">Planea:	Establece	las	estrategias	y	acciones</div>
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">3</div>
-                            <div className="menuListaNombre" >Estado de flujos de efectivo</div>
+                            <div className="menuListaNombre" >Ejecuta</div>
+                        </div>  
+                        <div className="menuListaItem lineMenu">
+                            <div className="menuListaNumero">4</div>
+                            <div className="menuListaNombre" >Organiza y dirige</div>
                         </div>  
                         <div className="menuListaItem">
-                            <div className="menuListaNumero">4</div>
-                            <div className="menuListaNombre">Estado de cambios en el capital contable</div>
+                            <div className="menuListaNumero">5</div>
+                            <div className="menuListaNombre">Controla</div>
                         </div>    
                     </div>              
                 </div>
