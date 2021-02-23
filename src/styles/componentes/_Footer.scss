@@ -1,0 +1,109 @@
+
+
+.footerContenedor{
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    //prueba
+    height: 70vh;
+    background-color: #203864;
+}
+
+////////////////////Parte Superior/////////////////////////////
+
+.footerParteSuperior{
+
+    display: flex;
+    flex-flow: row nowrap;
+    //prueba
+    height: 80%;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    // background-color: yellow;
+
+        .footerSocial{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 30px;
+            width: 25%;
+            //prueba
+            // background-color: cadetblue;
+            .social{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .redesContenido{
+                display: flex;
+                flex-flow: column nowrap;
+                // background-color: blue;
+
+                .redes{
+                //    background-color: blueviolet;
+                   padding: 7px; 
+                   padding-left: 0;
+                }
+            }
+        }
+        .footerContacto{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 30px;
+            width: 50%;
+            //prueba
+            // background-color: chocolate;
+            .contacto{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .datos{
+                padding: 4px; 
+                padding-left: 0;
+            }
+        }
+        .footerOficina{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 30px;
+            width: 25%;
+            //prueba
+            // background-color: crimson;
+            .oficina{
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+            .direccion{
+                padding: 4px; 
+                padding-left: 0;
+            }
+        }
+}
+
+////////////////////PArte Inferior/////////////////////////////
+
+.footerParteInferior{
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+    padding: 30px;
+    padding-left: 90px;
+    padding-right: 50px;
+    //prueba
+    // background-color: brown;
+    .footerEmpresa{
+        //prueba
+        // background-color: cyan;
+    }
+    .footerAvisoPrivacidad{
+        //prueba
+        // background-color: darkgoldenrod;
+    }
+}
