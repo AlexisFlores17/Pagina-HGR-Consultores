@@ -1,4 +1,4 @@
-import {useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 import {Header}     from "./componentes/Header";
 import {Nosotros}   from "./componentes/Nosotros";
@@ -12,15 +12,15 @@ function App() {
   const state = useSelector(state => state.contactoReducer)
 
   return (
-    <div className="App">      
-        <Header />
-        <Nosotros />
-        <Servicios />
-        <Proyectos />
-        { state.abierto 
-          && <Contacto />
-        }
-        <Footer />      
+    <div className="App">
+      <Header />
+      <Nosotros />
+      <Servicios />
+      <Proyectos />
+      { state.abierto 
+        && <Contacto />
+      }
+      <Footer />
     </div>
   );
 }
