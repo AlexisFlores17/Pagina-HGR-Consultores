@@ -285,6 +285,12 @@
     justify-content: center;
     align-items: center;
     padding: 120px 20px;
+    @media screen and (max-width: 690px){
+        padding: 100px 20px;
+    }
+    @media screen and (max-width: 590px){
+        padding: 80px 20px;
+    }
     //Prueba
     // height: 400px;
     
@@ -293,16 +299,14 @@
 
         display: flex;
         flex-flow: column nowrap;
-        width: 60%;
+        width: 65%;
         height: 70%;
         //Prueba
         // background-color:forestgreen;
-        @media screen and (max-width: 1210px){
-            width: 70%;
-        }
-        @media screen and (max-width: 810px){
+        @media screen and (max-width: 960px){
             width: 80%;
         }
+
         .serviciosQuoteTexto{
             color: white;
             display: flex;
@@ -312,15 +316,17 @@
                 font-size: 120px;
                 font-weight: 400;
                 padding-right: 10px;
-                @media screen and (max-width: 950px){
+                @media screen and (max-width: 900px){
                     font-size: 100px;
                 }
-                @media screen and (max-width: 810px){
+                @media screen and (max-width: 690px){
                     font-size: 80px;
                 }
-                @media screen and (max-width: 790px){
-                    font-size: 70px;
+                @media screen and (max-width: 590px){
+                    font-size: 60px;
                 }
+
+
             }
             .serviciosQuoteContenido{
                 padding-top: 8px;
@@ -330,19 +336,20 @@
                 span{
                     font-weight: bold;
                 }
-                @media screen and (max-width: 950px){
-                    padding-top: 5px;
-                    font-size: 25px;
+                @media screen and (max-width: 900px){
                     line-height: 40px;
+                    font-size: 25px;
                 }
-                @media screen and (max-width: 810px){
-                    font-size: 22px;
+                @media screen and (max-width: 690px){
+                    line-height: 35px;
                     padding-top: 0px;
-                    line-height: 30px;
-                }
-                @media screen and (max-width: 790px){
                     font-size: 20px;
                 }
+                @media screen and (max-width: 590px){
+                    line-height: 30px;
+                    font-size: 15px;
+                }
+
             }
         }
         .serviciosQuoteAutor{
@@ -354,14 +361,25 @@
             margin-top: 10px;
             margin-left: 60px;
             font-weight: 400;
-            //prueba
-            // background-color: blue;
-            @media screen and (max-width: 950px){
+            @media screen and (max-width: 900px){
+                font-size: 14px;
                 margin-left: 50px;
             }
-            @media screen and (max-width: 790px){
+            @media screen and (max-width: 690px){
+                font-size: 12px;
                 margin-left: 40px;
             }
+            @media screen and (max-width: 590px){
+                font-size: 10px;
+                line-height: 10px;
+                margin-left: 35px;
+            }
+            @media screen and (max-width: 520px){
+                font-size: 9px;
+
+            }
+            //prueba
+            // background-color: blue;
             .serviciosQuoteNombre{
                 color: white;
                 margin-bottom: 8px;
