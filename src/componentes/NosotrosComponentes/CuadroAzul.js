@@ -1,6 +1,15 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { abrirContacto } from '../../actions/contactoActions';
 
 export const CuadroAzul = () =>{
+
+    const dispatch = useDispatch();
+
+    const empezarProyecto = () => {
+        dispatch( abrirContacto() );
+    }
+
     return(
         <>
             <div className="colaborar-container">
@@ -12,7 +21,7 @@ export const CuadroAzul = () =>{
                             curae; Praesent tincidunt suscipit ipsum, 
                             at dignissim ipsum vulputate eu.
                         </p>
-                        <span className="btn-empezar-proyecto">
+                        <span className="btn-empezar-proyecto" onClick={() => empezarProyecto()}>
                             Empezar proyecto
                         </span>
                     </div>
