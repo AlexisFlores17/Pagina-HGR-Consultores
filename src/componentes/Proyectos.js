@@ -37,9 +37,9 @@ export const Proyectos = () =>{
                     </div>
                     <div className="proyectosRedes">
                         <div className="vertical">
-                            <div className="item">Youtube</div>
-                            <div className="item">Apple Music</div>
-                            <div className="item"> Spotify</div>
+                            <div className="item"><a href="#">Youtube</a></div>
+                            <div className="item"><a href="#">Apple Music</a></div>
+                            <div className="item"><a href="#">Spotify</a></div>
                         </div>
                     </div>
                 </div>

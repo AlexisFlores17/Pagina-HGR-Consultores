@@ -6,6 +6,9 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
     display: flex;
     flex-flow: row nowrap;
     height: 110vh;
+    @media screen and (max-width: 499px){
+        flex-flow: column nowrap;
+    }
     //prueba
     // background-color: blueviolet;
 }
@@ -15,9 +18,17 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
     background-image: $imageBackground;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 40% 0;
-    height: 110%;
+    background-position: 30% 0;
+    height: 120%;
     width: 50%;
+    @media screen and (max-width: 750px){
+        background-position: 20% 0;
+    }
+    @media screen and (max-width: 499px){
+        background-position: 20% 0;
+        height: 60%;
+        width: 100%;
+    }
 }
 
 .proyectosIzquierda{
@@ -29,6 +40,10 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
     color:white;
     width: 50%;
     background-color: rgba($color: #2f4166, $alpha: 0.7);
+    @media screen and (max-width: 499px){
+        width: 100%;
+        height: 50%;
+    }
     //prueba
     // background-color: burlywood;
     .proyectosPodcast{
@@ -37,12 +52,27 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
         
         //prueba
         // background-color: chocolate;
-        width: 40%;
-
+        width: 47%;
+        @media screen and (max-width: 1150px){
+            width: 60%;
+        }
+        @media screen and (max-width: 750px){
+            width: 70%;
+        }
+        @media screen and (max-width: 499px){
+            padding: 10px;
+            width: 40%;
+        }
         .titulo{
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            @media screen and (max-width: 950px){
+                font-size: 16px;
+            }
+            @media screen and (max-width: 850px){
+                font-size: 14px;
+            }
             //prueba
             // height: 20px;
             // background-color: crimson;
@@ -59,10 +89,20 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
             text-align: center;
             font-size: 14px;
             font-weight: 400;
-            margin-top: 5px;
+            margin-top: 10px;
+            @media screen and (max-width: 950px){
+                font-size: 12px;
+            }
+            @media screen and (max-width: 850px){
+                font-size: 11px;
+            }
+            @media screen and (max-width: 590px){
+                font-size: 10px;
+            }
             //prueba
             // background-color: darkblue;
         }
+        
     }
 }
 
@@ -70,72 +110,155 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
         display: flex;
         flex-flow: column nowrap;
         width: 50%;
+        @media screen and (max-width: 499px){
+            width: 100%;
+            height: 50%;
+        }
         //prueba
         // background-color: cadetblue;
         .proyectosFoto{
             //prueba
             height: 35%;
+            overflow: hidden;
             .foto{
-                width: 100%;
                 height: 100%;
                 background-image: $imageFondoGarin;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 0px -100px;
+                
+                @media screen and (max-width: 1250px){
+                    background-position: 0px -90px;
+                }
+                @media screen and (max-width: 1100px){
+                    background-position: 0px -75px;
+                }
+                @media screen and (max-width: 950px){
+                    background-position: 0px -60px;
+                }
+                @media screen and (max-width: 900px){
+                    background-position: -20px -50px;
+                    width: 110%;
+                    height: 110%;
+                }
+                @media screen and (max-width: 780px){
+                    background-position: -30px -50px;
+                    width: 120%;
+                    height: 120%;
+                }
+                @media screen and (max-width: 710px){
+                    background-position: -50px -50px;
+                    width: 130%;
+                    height: 130%;
+                }
+                @media screen and (max-width: 600px){
+                    background-position: -80px -50px;
+                    width: 130%;
+                    height: 130%;
+                }
             }
+            
         }
         .proyectosInformacion{
             padding-top: 20px;
             display: flex;
             flex-flow: row nowrap;
             height: 65%;
+            width: 100%;
             //prueba
             background-color: white;
+            @media screen and (max-width: 800px){
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: space-between;
+            }
             .proyectosTexto{
                 display: flex;
-                flex-flow: column;
+                flex-flow: column nowrap;
                 width: 85%;
-                padding: 40px 80px;
+                margin-left: 25px;
                 padding-bottom:0 ;
                 padding-top: 20px;
+                padding-right: 30px;
+                @media screen and (max-width: 800px){
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
                 //prueba
                 // background-color: darkorange;
                 .proyectosLogoSpotify{
                     display: flex;
                     flex-flow: wrap nowrap;
                     .logoProyectos{
-
+                        @media screen and (max-width: 1100px){
+                            font-size: 15px;
+                        }
                     }
                     .textoLogo{
                         margin-left: 5px;
                         text-decoration: underline 2px black;
+                        @media screen and (max-width: 1100px){
+                            font-size: 14px;
+                        }
                     }
                     //prueba
                     // background-color: gray;
                 }
                 .proyectosFiscalizados{
+                   display: flex;
+                   flex-flow: column nowrap;
+                   @media screen and (max-width: 800px){
+                        align-items: center;
+                        justify-content: center;
+                    }
                     //prueba
                     // background-color: hotpink;
                     .titulo{
-                        margin: 25px;
-                        margin-left: 0;
-                        margin-bottom: 0;
+                        padding: 25px;
+                        padding-left: 0;
                         font-size: 35px;
                         font-weight: 600;
+                        @media screen and (max-width: 1100px){
+                            font-size: 30px;
+                        }
+                        @media screen and (max-width: 750px){
+                            font-size: 20px;
+                        }
+                        @media screen and (max-width: 800px){
+                            padding: 25px;
+                        }
+                        @media screen and (max-width: 800px){
+                            font-size: 18px;
+                            margin-top: 10px;
+                            padding: 15px;
+                        }
                         // background-color: indianred;
                     }
                     .texto{
                         width: 80%;
-                        margin-top: 25px;
+                        margin-top: 10px;
                         padding-left: 0;
                         font-size: 16px;
                         font-weight: 300;
+                        @media screen and (max-width: 900px){
+                            margin-top: 5px;
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width: 700px){
+                            width: 100%;
+                            font-size: 13px;
+                        }
+                        
                     }
                 }
             }
             .proyectosRedes{
                 display: flex;
-                width: 10%;
+                @media screen and (max-width: 800px){
+                    align-items: center;
+                    justify-content: center;
+                }
                 //prueba
                 // background-color: darkviolet;
                
@@ -146,6 +269,12 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                     align-items: flex-start;
                     writing-mode: vertical-lr;
                     transform: rotate(180deg);
+                    @media screen and (max-width: 800px){
+                        align-items: center;
+                        justify-content: center;
+                        writing-mode:inherit;
+                        transform: rotate(0deg);
+                    }
 
                     //prueba
                     // background-color: indianred;
@@ -154,6 +283,18 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                         font-size: 14px;
                         margin: 15px;
                         text-decoration: underline 1px black;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        @media screen and (max-width: 700px){
+                            font-size: 12px;
+                            margin: 12px;
+                        }
+                        @media screen and (max-width: 600px){
+                            font-size: 12px;
+                            margin: 10px;
+                        }
                     }
                 }
             }
