@@ -6,12 +6,13 @@ export const contactoReducer = ( initialState = {
     nombre: "",
     correo: "",
     conozcoSituacion: false,
-    areaAyuda: "",
+    areaAyuda: "otro",
     areaAyuda2: "",
-    tipoPersona: "",
+    tipoPersona: "fisica",
     tipoPersona2: "",
     tipoPersona3: "",
     residencia: "",
+    pagina: 1
     
 }, action )=>{
     switch (action.type) {  
@@ -19,6 +20,20 @@ export const contactoReducer = ( initialState = {
             return{
                 ...initialState,
                 ...action.payload
+            };     
+        case types.resetContacto:
+            return{
+                abierto: false,
+                nombre: "",
+                correo: "",
+                conozcoSituacion: false,
+                areaAyuda: "otro",
+                areaAyuda2: "",
+                tipoPersona: "fisica",
+                tipoPersona2: "",
+                tipoPersona3: "",
+                residencia: "",
+                pagina: 1
             };     
         default:
             return initialState;
