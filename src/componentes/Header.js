@@ -29,7 +29,7 @@ export const Header = () =>{
         else if(state.clicked === false){
             setState({
                 clicked: !state.clicked,
-                menuName: "Close"
+                menuName: "Cerrar"
             })
             
         }
@@ -55,7 +55,7 @@ export const Header = () =>{
                         </div>
                         
                         <div className="menu">
-                            <button disabled={disabled} onClick={handleMenu}>Menu</button>
+                            <button disabled={disabled} onClick={handleMenu}>{state.menuName}</button>
                         </div>
                     </div>
                 </div>
