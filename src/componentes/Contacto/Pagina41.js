@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 
-import { HiArrowNarrowRight} from "react-icons/hi";
 import { HiArrowNarrowLeft} from "react-icons/hi";
 import { HiCheckCircle } from "react-icons/hi";
 import { cambiarPagina, setAreaAyuda2 } from '../../actions/contactoActions';
@@ -13,6 +12,7 @@ export const Pagina41 = () => {
 
     const setArea = (value) => {
         dispatch( setAreaAyuda2(value) );
+        siguiente()
     }
 
     const siguiente = () => {
@@ -20,6 +20,7 @@ export const Pagina41 = () => {
     }
 
     const anterior = () => {
+        dispatch( setAreaAyuda2("") );
         dispatch( cambiarPagina( 4 ) );
     }
 
@@ -45,9 +46,6 @@ export const Pagina41 = () => {
             <div className="btn-siguiente siguiente-anterior">
                 <span className="btn-siguiente-span" onClick={() => anterior()}>
                     <HiArrowNarrowLeft />
-                </span>
-                <span className="btn-siguiente-span" onClick={() => siguiente()}>
-                    <HiArrowNarrowRight />
                 </span>
             </div>
         </span>
