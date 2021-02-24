@@ -229,6 +229,10 @@ $amarillo: #BF9000;
             @media screen and (max-width: 500px){
                 width: 100%;
             }
+            @media screen and (max-width: 340px){
+                line-height: 1rem;
+                font-size: 11px;
+            }    
         }
         h3{
             font-size: 80px;
@@ -249,6 +253,9 @@ $amarillo: #BF9000;
                 margin-bottom: 20px;
                 font-size: 40px;
             }
+            @media screen and (max-width: 340px){
+                font-size: 30px;
+            }  
         }
     }
     .first-row{
