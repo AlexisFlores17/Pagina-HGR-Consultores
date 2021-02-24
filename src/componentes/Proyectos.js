@@ -24,7 +24,7 @@ export const Proyectos = () =>{
                     <div className="proyectosTexto">
                         <div className="proyectosLogoSpotify">
                             <FaSpotify className="logoProyectos"/>
-                            <div className="textoLogo">Escuchalo en Spotify</div>
+                            <div className="textoLogo"><a href="#">Escuchalo en Spotify</a></div>
                         </div>
                         <div className="proyectosFiscalizados">
                             <div className="titulo">Fiscalizados</div>

@@ -9,6 +9,9 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
     @media screen and (max-width: 499px){
         flex-flow: column nowrap;
     }
+    a{
+        color: black;
+    }
     //prueba
     // background-color: blueviolet;
 }
@@ -29,6 +32,7 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
         height: 60%;
         width: 100%;
     }
+    
 }
 
 .proyectosIzquierda{
@@ -63,6 +67,18 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
             padding: 10px;
             width: 40%;
         }
+        @media screen and (max-width: 414px){
+            width: 60%;
+        }
+        @media screen and (max-width: 375px){
+            width: 70%;
+        }
+        @media screen and (max-width: 360px){
+            width: 65%;
+        }
+        @media screen and (max-width: 320px){
+            width: 60%;
+        }
         .titulo{
             font-size: 18px;
             font-weight: 600;
@@ -72,6 +88,9 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
             }
             @media screen and (max-width: 850px){
                 font-size: 14px;
+            }
+            @media screen and (max-width: 320px){
+                font-size: 12px;
             }
             //prueba
             // height: 20px;
@@ -99,6 +118,18 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
             @media screen and (max-width: 590px){
                 font-size: 10px;
             }
+            @media screen and (max-width: 375px){
+                margin-top: 12px;
+                font-size: 12px;
+            }        
+            @media screen and (max-width: 360px){
+                font-size: 11
+                px;
+            }
+            @media screen and (max-width: 320px){
+                font-size: 10px;
+            }
+    
             //prueba
             // background-color: darkblue;
         }
@@ -120,41 +151,24 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
             //prueba
             height: 35%;
             overflow: hidden;
+            @media screen and (max-width: 375px){
+                height: 40%;
+            }
             .foto{
-                height: 100%;
+                height: 130%;
                 background-image: $imageFondoGarin;
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: 0px -100px;
-                
-                @media screen and (max-width: 1250px){
-                    background-position: 0px -90px;
+                background-position-y: -50px;
+                background-position-x: center;
+                @media screen and (max-width: 414px){
+                    background-position-y: -60px;
                 }
-                @media screen and (max-width: 1100px){
-                    background-position: 0px -75px;
+                @media screen and (max-width: 375px){
+                    background-position-y: -50px;
                 }
-                @media screen and (max-width: 950px){
-                    background-position: 0px -60px;
-                }
-                @media screen and (max-width: 900px){
-                    background-position: -20px -50px;
-                    width: 110%;
-                    height: 110%;
-                }
-                @media screen and (max-width: 780px){
-                    background-position: -30px -50px;
-                    width: 120%;
-                    height: 120%;
-                }
-                @media screen and (max-width: 710px){
-                    background-position: -50px -50px;
-                    width: 130%;
-                    height: 130%;
-                }
-                @media screen and (max-width: 600px){
-                    background-position: -80px -50px;
-                    width: 130%;
-                    height: 130%;
+                @media screen and (max-width: 280px){
+                    background-position-y: -30px;
                 }
             }
             
@@ -172,6 +186,12 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                 align-items: center;
                 justify-content: space-between;
             }
+            @media screen and (max-width: 375px){
+                height: 60%;
+            }
+            @media screen and (max-width: 320px){
+                padding-top: 5px;
+            }
             .proyectosTexto{
                 display: flex;
                 flex-flow: column nowrap;
@@ -185,6 +205,10 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                     justify-content: center;
                     text-align: center;
                 }
+                @media screen and (max-width: 375px){
+                    padding-top: 10px;
+                }
+
                 //prueba
                 // background-color: darkorange;
                 .proyectosLogoSpotify{
@@ -194,12 +218,18 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                         @media screen and (max-width: 1100px){
                             font-size: 15px;
                         }
+                        @media screen and (max-width: 320px){
+                            font-size: 12px;
+                        }
                     }
                     .textoLogo{
                         margin-left: 5px;
                         text-decoration: underline 2px black;
                         @media screen and (max-width: 1100px){
                             font-size: 14px;
+                        }
+                        @media screen and (max-width: 320px){
+                            font-size: 12px;
                         }
                     }
                     //prueba
@@ -228,10 +258,14 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                         @media screen and (max-width: 800px){
                             padding: 25px;
                         }
-                        @media screen and (max-width: 800px){
-                            font-size: 18px;
+                        @media screen and (max-width: 375px){
                             margin-top: 10px;
-                            padding: 15px;
+                            padding: 10px;
+                            font-size: 19px;
+                        }
+
+                        @media screen and (max-width: 320px){
+                            font-size: 17px;
                         }
                         // background-color: indianred;
                     }
@@ -248,6 +282,27 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                         @media screen and (max-width: 700px){
                             width: 100%;
                             font-size: 13px;
+                        }
+                        @media screen and (max-width: 414px){
+                            width: 80%;
+                            font-size: 12px;
+                            margin-top: 0px;
+                            margin-bottom: 10px;
+                        }
+                        @media screen and (max-width: 375px){
+                            width: 80%;
+                            font-size: 11px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                        @media screen and (max-width: 360px){
+                            margin-top: 5px;
+                            margin-bottom: 5px;;
+                        }
+                        @media screen and (max-width: 320px){
+                            font-size: 10px;
+                            margin-top: 0px;
+                            
                         }
                         
                     }
@@ -294,6 +349,11 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                         @media screen and (max-width: 600px){
                             font-size: 12px;
                             margin: 10px;
+                        }
+                        @media screen and (max-width: 320px){
+                            font-size: 10px;
+                            margin: 5px;
+                            margin-top: 15px;
                         }
                     }
                 }
