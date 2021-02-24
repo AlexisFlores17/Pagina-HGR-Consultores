@@ -8,10 +8,10 @@ export const Footer = () =>{
                 <div className="footerSocial" >
                     <div className="social">Social</div>
                     <div className="redesContenido">
-                        <div className="redes" >Linkedin</div>
-                        <div className="redes" >Youtube</div>
-                        <div className="redes" >Spotify</div>
-                        <div className="redes" >Facebook</div>
+                        <div className="redes" ><a href="#">Linkedin</a></div>
+                        <div className="redes" ><a href="#">Youtube</a></div>
+                        <div className="redes" ><a href="#">Spotify</a></div>
+                        <div className="redes" ><a href="#">Facebook</a></div>
                     </div>
                 </div>
                 <div className="footerContacto" >
@@ -35,7 +35,7 @@ export const Footer = () =>{
             </div>
             <div className="footerParteInferior" >
                 <div className="footerEmpresa" >&copy; {new Date().getFullYear()} HGR consultores </div>
-                <div className="footerEmpresa" >Suported by Light & Sound Disruptive Lab </div>
+                <div className="footerEmpresaLink" >Suported by <a href="#">Light & Sound Disruptive Lab</a> </div>
                 <div className="footerAvisoPrivacidad" > Aviso de Privacidad</div>
             </div>
         </div>
