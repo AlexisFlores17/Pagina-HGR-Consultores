@@ -1,6 +1,10 @@
 
 $dorado: #BF9000;
 
+.bold{
+    font-weight: 500;
+}
+
 .contacto-container{
     width: 100%;
     height: 100vh;
@@ -34,11 +38,18 @@ $dorado: #BF9000;
     align-items: center;
     span{
         overflow: hidden;
+        max-width: 70%;
     }
     .pregunta{
         font-size: 25px;
         margin-bottom: 30px;
         font-weight: 200;
+    }
+    .pregunta-final{
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
     }
     .contacto-input-text{
         background-color: transparent;
@@ -103,4 +114,8 @@ $dorado: #BF9000;
             color: $dorado;
         }
     }
+}
+
+.btn-enviar{
+    border-radius: 10px !important;
 }

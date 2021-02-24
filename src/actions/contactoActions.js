@@ -54,3 +54,63 @@ export const setConozcoSituacion = (value)=>{
     }
 }
 
+export const setAreaAyuda = (value)=>{
+    return{
+        type: types.ActualizarContacto,
+        payload:{
+            areaAyuda: value,
+        }
+    }
+}
+
+export const setAreaAyuda2 = (value)=>{
+    return{
+        type: types.ActualizarContacto,
+        payload:{
+            areaAyuda2: value,
+        }
+    }
+}
+
+export const setTipoPersona = (value)=>{
+    return{
+        type: types.ActualizarContacto,
+        payload:{
+            tipoPersona: value,
+        }
+    }
+}
+
+export const setTipoPersona2 = (value)=>{
+    return{
+        type: types.ActualizarContacto,
+        payload:{
+            tipoPersona2: value,
+        }
+    }
+}
+
+export const setTipoPersona3 = (value)=>{
+    return{
+        type: types.ActualizarContacto,
+        payload:{
+            tipoPersona3: value,
+        }
+    }
+}
+
+export const setResidencia = (value)=>{
+    return{
+        type: types.ActualizarContacto,
+        payload:{
+            residencia: value,
+        }
+    }
+}
+
+export const reset = ()=>{
+    return{
+        type: types.resetContacto,
+    }
+}
+
