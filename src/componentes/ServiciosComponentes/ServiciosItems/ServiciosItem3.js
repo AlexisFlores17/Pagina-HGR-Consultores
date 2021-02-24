@@ -8,7 +8,7 @@ export const ServiciosItem3 = (props) =>{
 
         <div className="serviciosItem lineMenu" >
             <div className="serviciosMenu" >
-                <div className="serviciosMenuTitulo" >Cálculo de nóminas y contribuciones de seguridad social</div>
+                <div className="serviciosMenuTitulo" >Cálculo de nóminas de seguridad social</div>
                 {dropDownMenu ===3 ? 
                     <div className="serviciosMenuIconoCirculoDespliege" onClick={e=>lista(e,3)}>         
                         <RiArrowUpLine className="serviciosMenuIconoDespliege" />

@@ -8,7 +8,7 @@ export const ServiciosItem2 = (props) =>{
 
         <div className="serviciosItem lineMenu" >
             <div className="serviciosMenu" >
-                <div className="serviciosMenuTitulo" >Determinación y declaración de impuestos federales y locales</div>
+                <div className="serviciosMenuTitulo 2" >Declaración de impuestos federales y locales</div>
                 {dropDownMenu ===2 ? 
                     <div className="serviciosMenuIconoCirculoDespliege" onClick={e=>lista(e,2)}>         
                         <RiArrowUpLine className="serviciosMenuIconoDespliege" />
