@@ -24,7 +24,7 @@ export const Proyectos = () =>{
                     <div className="proyectosTexto">
                         <div className="proyectosLogoSpotify">
                             <FaSpotify className="logoProyectos"/>
-                            <div className="textoLogo">Escuchalo en Spotify</div>
+                            <div className="textoLogo"><a href="#">Escuchalo en Spotify</a></div>
                         </div>
                         <div className="proyectosFiscalizados">
                             <div className="titulo">Fiscalizados</div>
@@ -37,9 +37,9 @@ export const Proyectos = () =>{
                     </div>
                     <div className="proyectosRedes">
                         <div className="vertical">
-                            <div className="item">Youtube</div>
-                            <div className="item">Apple Music</div>
-                            <div className="item"> Spotify</div>
+                            <div className="item"><a href="#">Youtube</a></div>
+                            <div className="item"><a href="#">Apple Music</a></div>
+                            <div className="item"><a href="#">Spotify</a></div>
                         </div>
                     </div>
                 </div>

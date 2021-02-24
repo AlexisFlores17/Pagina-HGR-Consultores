@@ -6,6 +6,12 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
     display: flex;
     flex-flow: row nowrap;
     height: 110vh;
+    @media screen and (max-width: 499px){
+        flex-flow: column nowrap;
+    }
+    a{
+        color: black;
+    }
     //prueba
     // background-color: blueviolet;
 }
@@ -15,9 +21,18 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
     background-image: $imageBackground;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 40% 0;
-    height: 110%;
+    background-position: 30% 0;
+    height: 120%;
     width: 50%;
+    @media screen and (max-width: 750px){
+        background-position: 20% 0;
+    }
+    @media screen and (max-width: 499px){
+        background-position: 20% 0;
+        height: 60%;
+        width: 100%;
+    }
+    
 }
 
 .proyectosIzquierda{
@@ -29,6 +44,10 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
     color:white;
     width: 50%;
     background-color: rgba($color: #2f4166, $alpha: 0.7);
+    @media screen and (max-width: 499px){
+        width: 100%;
+        height: 50%;
+    }
     //prueba
     // background-color: burlywood;
     .proyectosPodcast{
@@ -37,12 +56,42 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
         
         //prueba
         // background-color: chocolate;
-        width: 40%;
-
+        width: 47%;
+        @media screen and (max-width: 1150px){
+            width: 60%;
+        }
+        @media screen and (max-width: 750px){
+            width: 70%;
+        }
+        @media screen and (max-width: 499px){
+            padding: 10px;
+            width: 40%;
+        }
+        @media screen and (max-width: 414px){
+            width: 60%;
+        }
+        @media screen and (max-width: 375px){
+            width: 70%;
+        }
+        @media screen and (max-width: 360px){
+            width: 65%;
+        }
+        @media screen and (max-width: 320px){
+            width: 60%;
+        }
         .titulo{
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            @media screen and (max-width: 950px){
+                font-size: 16px;
+            }
+            @media screen and (max-width: 850px){
+                font-size: 14px;
+            }
+            @media screen and (max-width: 320px){
+                font-size: 12px;
+            }
             //prueba
             // height: 20px;
             // background-color: crimson;
@@ -59,10 +108,32 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
             text-align: center;
             font-size: 14px;
             font-weight: 400;
-            margin-top: 5px;
+            margin-top: 10px;
+            @media screen and (max-width: 950px){
+                font-size: 12px;
+            }
+            @media screen and (max-width: 850px){
+                font-size: 11px;
+            }
+            @media screen and (max-width: 590px){
+                font-size: 10px;
+            }
+            @media screen and (max-width: 375px){
+                margin-top: 12px;
+                font-size: 12px;
+            }        
+            @media screen and (max-width: 360px){
+                font-size: 11
+                px;
+            }
+            @media screen and (max-width: 320px){
+                font-size: 10px;
+            }
+    
             //prueba
             // background-color: darkblue;
         }
+        
     }
 }
 
@@ -70,72 +141,179 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
         display: flex;
         flex-flow: column nowrap;
         width: 50%;
+        @media screen and (max-width: 499px){
+            width: 100%;
+            height: 50%;
+        }
         //prueba
         // background-color: cadetblue;
         .proyectosFoto{
             //prueba
             height: 35%;
+            overflow: hidden;
+            @media screen and (max-width: 375px){
+                height: 40%;
+            }
             .foto{
-                width: 100%;
-                height: 100%;
+                height: 130%;
                 background-image: $imageFondoGarin;
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: 0px -100px;
+                background-position-y: -50px;
+                background-position-x: center;
+                @media screen and (max-width: 414px){
+                    background-position-y: -60px;
+                }
+                @media screen and (max-width: 375px){
+                    background-position-y: -50px;
+                }
+                @media screen and (max-width: 280px){
+                    background-position-y: -30px;
+                }
             }
+            
         }
         .proyectosInformacion{
             padding-top: 20px;
             display: flex;
             flex-flow: row nowrap;
             height: 65%;
+            width: 100%;
             //prueba
             background-color: white;
+            @media screen and (max-width: 800px){
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: space-between;
+            }
+            @media screen and (max-width: 375px){
+                height: 60%;
+            }
+            @media screen and (max-width: 320px){
+                padding-top: 5px;
+            }
             .proyectosTexto{
                 display: flex;
-                flex-flow: column;
+                flex-flow: column nowrap;
                 width: 85%;
-                padding: 40px 80px;
+                margin-left: 25px;
                 padding-bottom:0 ;
                 padding-top: 20px;
+                padding-right: 30px;
+                @media screen and (max-width: 800px){
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                @media screen and (max-width: 375px){
+                    padding-top: 10px;
+                }
+
                 //prueba
                 // background-color: darkorange;
                 .proyectosLogoSpotify{
                     display: flex;
                     flex-flow: wrap nowrap;
                     .logoProyectos{
-
+                        @media screen and (max-width: 1100px){
+                            font-size: 15px;
+                        }
+                        @media screen and (max-width: 320px){
+                            font-size: 12px;
+                        }
                     }
                     .textoLogo{
                         margin-left: 5px;
                         text-decoration: underline 2px black;
+                        @media screen and (max-width: 1100px){
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width: 320px){
+                            font-size: 12px;
+                        }
                     }
                     //prueba
                     // background-color: gray;
                 }
                 .proyectosFiscalizados{
+                   display: flex;
+                   flex-flow: column nowrap;
+                   @media screen and (max-width: 800px){
+                        align-items: center;
+                        justify-content: center;
+                    }
                     //prueba
                     // background-color: hotpink;
                     .titulo{
-                        margin: 25px;
-                        margin-left: 0;
-                        margin-bottom: 0;
+                        padding: 25px;
+                        padding-left: 0;
                         font-size: 35px;
                         font-weight: 600;
+                        @media screen and (max-width: 1100px){
+                            font-size: 30px;
+                        }
+                        @media screen and (max-width: 750px){
+                            font-size: 20px;
+                        }
+                        @media screen and (max-width: 800px){
+                            padding: 25px;
+                        }
+                        @media screen and (max-width: 375px){
+                            margin-top: 10px;
+                            padding: 10px;
+                            font-size: 19px;
+                        }
+
+                        @media screen and (max-width: 320px){
+                            font-size: 17px;
+                        }
                         // background-color: indianred;
                     }
                     .texto{
                         width: 80%;
-                        margin-top: 25px;
+                        margin-top: 10px;
                         padding-left: 0;
                         font-size: 16px;
                         font-weight: 300;
+                        @media screen and (max-width: 900px){
+                            margin-top: 5px;
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width: 700px){
+                            width: 100%;
+                            font-size: 13px;
+                        }
+                        @media screen and (max-width: 414px){
+                            width: 80%;
+                            font-size: 12px;
+                            margin-top: 0px;
+                            margin-bottom: 10px;
+                        }
+                        @media screen and (max-width: 375px){
+                            width: 80%;
+                            font-size: 11px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                        @media screen and (max-width: 360px){
+                            margin-top: 5px;
+                            margin-bottom: 5px;;
+                        }
+                        @media screen and (max-width: 320px){
+                            font-size: 10px;
+                            margin-top: 0px;
+                            
+                        }
+                        
                     }
                 }
             }
             .proyectosRedes{
                 display: flex;
-                width: 10%;
+                @media screen and (max-width: 800px){
+                    align-items: center;
+                    justify-content: center;
+                }
                 //prueba
                 // background-color: darkviolet;
                
@@ -146,6 +324,12 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                     align-items: flex-start;
                     writing-mode: vertical-lr;
                     transform: rotate(180deg);
+                    @media screen and (max-width: 800px){
+                        align-items: center;
+                        justify-content: center;
+                        writing-mode:inherit;
+                        transform: rotate(0deg);
+                    }
 
                     //prueba
                     // background-color: indianred;
@@ -154,6 +338,23 @@ $imageBackground: url('../../images/imagenGarin17.jpg');
                         font-size: 14px;
                         margin: 15px;
                         text-decoration: underline 1px black;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        @media screen and (max-width: 700px){
+                            font-size: 12px;
+                            margin: 12px;
+                        }
+                        @media screen and (max-width: 600px){
+                            font-size: 12px;
+                            margin: 10px;
+                        }
+                        @media screen and (max-width: 320px){
+                            font-size: 10px;
+                            margin: 5px;
+                            margin-top: 15px;
+                        }
                     }
                 }
             }
