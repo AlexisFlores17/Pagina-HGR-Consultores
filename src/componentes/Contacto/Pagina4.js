@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 
-import { HiArrowNarrowRight} from "react-icons/hi";
 import { HiArrowNarrowLeft} from "react-icons/hi";
 import { HiCheckCircle } from "react-icons/hi";
 import { cambiarPagina, setAreaAyuda } from '../../actions/contactoActions';
@@ -13,12 +12,13 @@ export const Pagina4 = () => {
 
     const setArea = (value) => {
         dispatch( setAreaAyuda(value) );
+        siguiente( value );
     }
 
-    const siguiente = () => {
-        if( state.areaAyuda === "fiscal"){
+    const siguiente = (value) => {
+        if( value === "fiscal"){
             dispatch( cambiarPagina( 41 ) );
-        } else if ( state.areaAyuda === "financiera" ){
+        } else if ( value === "financiera" ){
             dispatch( cambiarPagina( 42 ) );
         }else{
             dispatch( cambiarPagina( 5 ) );
@@ -54,9 +54,6 @@ export const Pagina4 = () => {
             <div className="btn-siguiente siguiente-anterior">
                 <span className="btn-siguiente-span" onClick={() => anterior()}>
                     <HiArrowNarrowLeft />
-                </span>
-                <span className="btn-siguiente-span" onClick={() => siguiente()}>
-                    <HiArrowNarrowRight />
                 </span>
             </div>
         </span>

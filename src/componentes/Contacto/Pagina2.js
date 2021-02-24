@@ -13,9 +13,9 @@ export const Pagina2 = () => {
     const state = useSelector(state => state.contactoReducer)
     const dispatch = useDispatch();
     const initialForm = {
-        correo: '',
+        correo: state.correo,
     }
-    const [ formValues, handleInputChange, reset ] = useForm( initialForm );
+    const [ formValues, handleInputChange ] = useForm( initialForm );
 
     const siguiente = () => {
         if(formValues.correo !== ""){
