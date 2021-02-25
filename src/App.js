@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Inicio />
+      {/* <Header />
+      <Inicio /> */}
       <Nosotros />
       <Servicios />
       <Proyectos />
