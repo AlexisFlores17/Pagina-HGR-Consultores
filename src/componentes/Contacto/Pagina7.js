@@ -32,7 +32,7 @@ export const Pagina7 = () => {
     return (
         <span>
             <p className="pregunta pregunta-final">
-                Muchas gracias {state.nombre}, de click en enviar para poder ponernos en contacto con usted 
+                Muchas gracias {state.nombre}, de click en enviar para poder ponernos en contacto con usted
             </p>
             <div className="btn-siguiente siguiente-anterior">
                 <span className="btn-siguiente-span" onClick={() => anterior()}>
