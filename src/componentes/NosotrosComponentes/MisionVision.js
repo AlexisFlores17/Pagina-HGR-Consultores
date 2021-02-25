@@ -11,65 +11,41 @@ export const MisionVision = () =>{
     let misionVision = useRef(null);
 
     useEffect(() => {
-        // hovering(circuloAzul, 0)
-        // hovering(circuloAmarillo, 1)
+        enter()
+        return () => {
+        }
+    }, [])
+
+    const enter = () => {
+
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: misionVision,
                 start: "top center",
                 end: "top 50px",
-                markers: true,
+                markers: false,
                 toggleActions: "play pause reverse reset",
-                scrub: true
+                scrub: true,
             },
         })
         tl.from(circuloAzul,{
             x: "-50vw",
+            duration: 60
         })
         tl.from(circuloAmarillo,{
             x: "50vw",
+            duration: 60
         },0)
-        return () => {
-        }
-    }, [])
+        tl.to(circuloAzul,{
+            css: {animation: "circle 6s linear infinite"}
+        })
+        tl.to(circuloAmarillo,{
+            css: {animation: "circle2 6s linear infinite"}
+        })
 
-    const hovering = (elemento, delay) => {
-
-        const tl = gsap.timeline({
-            repeat:-1, 
-            delay: delay,
-        });
-         /*Can Animation*/
-        tl
-            //move top left
-        .to(elemento, { y:'-=30', x:'+=20',  rotation:'-=5', ease:"power1.inOut", duration: 3,})
-        
-            //move down right
-        .to(elemento, { y:'+=30', x:'-=20', rotation:'-=5', ease:"power1.inOut", duration: 2,})
-        
-        
-        .to(elemento, { y:'-=20',  rotation:'+=5', ease:"power1.inOut", duration: 3,})
-        
-        .to(elemento, { y:'+=20',  rotation:'+=5', ease:"power1.inOut", duration: 3,})
-        
-        
-        .to(elemento, { y:'-=50', ease:"power1.inOut", duration: 3,})
-           
-        .to(elemento, { y:'+=50', ease:"power1.inOut", duration: 3,})
-        
-        
-        .to(elemento, { y:'-=30', ease:"power1.inOut", duration: 3,})
-           
-        .to(elemento, { y:'+=30', ease:"power1.inOut", duration: 3,})
-        
-        
-        .to(elemento, { y:'-=30', ease:"power1.inOut", duration: 2,})
-           
-        .to(elemento, { y:'+=30', ease:"power1.inOut", duration: 2,})
-  
-        gsap.to(tl, {ease:"power1.inOut", duration: 27})
-
+        return tl;
     }
+
 
     return(
         <>
