@@ -1,12 +1,82 @@
-import React from 'react';
+import React,{ useEffect, useRef } from 'react';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export const MisionVision = () =>{
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let circuloAzul = useRef(null);
+    let circuloAmarillo = useRef(null);
+    let misionVision = useRef(null);
+
+    useEffect(() => {
+        // hovering(circuloAzul, 0)
+        // hovering(circuloAmarillo, 1)
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: misionVision,
+                start: "top center",
+                end: "top 50px",
+                markers: true,
+                toggleActions: "play pause reverse reset",
+                scrub: true
+            },
+        })
+        tl.from(circuloAzul,{
+            x: "-50vw",
+        })
+        tl.from(circuloAmarillo,{
+            x: "50vw",
+        },0)
+        return () => {
+        }
+    }, [])
+
+    const hovering = (elemento, delay) => {
+
+        const tl = gsap.timeline({
+            repeat:-1, 
+            delay: delay,
+        });
+         /*Can Animation*/
+        tl
+            //move top left
+        .to(elemento, { y:'-=30', x:'+=20',  rotation:'-=5', ease:"power1.inOut", duration: 3,})
+        
+            //move down right
+        .to(elemento, { y:'+=30', x:'-=20', rotation:'-=5', ease:"power1.inOut", duration: 2,})
+        
+        
+        .to(elemento, { y:'-=20',  rotation:'+=5', ease:"power1.inOut", duration: 3,})
+        
+        .to(elemento, { y:'+=20',  rotation:'+=5', ease:"power1.inOut", duration: 3,})
+        
+        
+        .to(elemento, { y:'-=50', ease:"power1.inOut", duration: 3,})
+           
+        .to(elemento, { y:'+=50', ease:"power1.inOut", duration: 3,})
+        
+        
+        .to(elemento, { y:'-=30', ease:"power1.inOut", duration: 3,})
+           
+        .to(elemento, { y:'+=30', ease:"power1.inOut", duration: 3,})
+        
+        
+        .to(elemento, { y:'-=30', ease:"power1.inOut", duration: 2,})
+           
+        .to(elemento, { y:'+=30', ease:"power1.inOut", duration: 2,})
+  
+        gsap.to(tl, {ease:"power1.inOut", duration: 27})
+
+    }
+
     return(
         <>
-            <div className="mv-container">
+            <div className="mv-container" ref={ el => (misionVision = el) }>
                 <div className="circulos-container">
-                    <div className="circulo-animado azul"></div>
-                    <div className="circulo-animado amarillo"></div>
+                    <div className="circulo-animado azul" ref={el => (circuloAzul = el )} ></div>
+                    <div className="circulo-animado amarillo" ref={el => (circuloAmarillo = el )}></div>
                 </div>
                 <div className="mv-texto-container">
                     <div className="mv-row first-row">
