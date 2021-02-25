@@ -22,7 +22,7 @@ export const Pagina1 = () => {
             dispatch( setNombre(formValues.nombre));
             dispatch( cambiarPagina( state.pagina + 1 ));
         } else {
-            swal ( "Campo vacío" ,  "Por favor llene el campo de nombre" ,  "warning" )
+            swal ( "Campo vacío" ,  "Por favor llene el campo de nombre" ,  "warning")
         }
         
     }
