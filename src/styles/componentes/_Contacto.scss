@@ -200,6 +200,8 @@ $dorado: #BF9000;
 
 .btn-enviar{
     border-radius: 10px !important;
+    background-color: unset;
+    color: white;
     @media screen and (max-width: 360px){
         font-size: 20px;
     }

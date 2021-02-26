@@ -46,7 +46,7 @@ export const Pagina61 = () => {
                     Sociedad cooperativa { state.tipoPersona3 === "cooperativa" && <i><HiCheckCircle /></i> }
                 </div>
                 <div className="opcion" onClick={ () => setPersona("sas") }>
-                    Sociedad por acciones simplificada { state.tipoPersona3 === "sas" && <i><HiCheckCircle /></i> }
+                    Sociedad por acciones simplificadas { state.tipoPersona3 === "sas" && <i><HiCheckCircle /></i> }
                 </div>
             </div>
             <div className="btn-siguiente siguiente-anterior">
