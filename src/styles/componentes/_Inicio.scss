@@ -56,18 +56,22 @@
     width: 100%;
     .imageDown{
         position: absolute;
-        bottom: 0%;   
+        bottom: 10%;   
         margin: 0 auto;    
     }
 }
 
 .imageRight{
     float: right;    
-    margin-top:100px
+    margin-top: 20%
+}
+.imageLeft{
+    margin-top: 20%
+
 }
 
 /* Use a media query to add a breakpoint at 770px: */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 760px) {
     .content {        
         // background-color: saddlebrown;
         width: 400px !important;
@@ -89,16 +93,18 @@
     }
   }
 @media screen and (max-width: 610px) {
-    .content {        
-        background-color: saddlebrown;
+    .content {      
+        background-color: #BF9000;  
         width: 300px !important;
         font-size: 30px !important;
         line-height: 40px !important;
        
         .bottom-line{
             .line{
+                width: 150px !important;
             }
             .contact{
+                width: 140px !important;
             }
             
         }

@@ -109,11 +109,13 @@ export default function Pictures() {
     
     // gsap.ticker.add(fadeInUp);
     // gsap.ticker.lagSmoothing(0);
+
+    
     
     return (
-        <div className="imageLeft">
+        <div>
             <div className="upperImg">
-                <img ref = {el => (refImg1= el)} src={photo} alt="Display Image" />
+                <img ref = {el => (refImg1= el)} src={photo} className="imageLeft" alt="Display Image" />
                 <img ref = {el => (refImg3= el)} src={photo3} alt="Display Image" className="imageRight"/>
             </div>
             <div className="downImg">

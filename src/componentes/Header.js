@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import Hamburger from './Hamburger'
 export const Header = () =>{
+    let myHeader = useRef(null)
 
     const [state, setState] = useState({
         initial: false,
@@ -42,11 +43,20 @@ export const Header = () =>{
         }, 1200)
     }
 
-
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        myHeader.style.top = "0";
+    } else {
+        myHeader.style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+    }
 
 
     return (
-        <header >
+        <header ref = {el => (myHeader= el)} >
             <div className="container">
                 <div className="wrapper">
                     <div className="inner-header">

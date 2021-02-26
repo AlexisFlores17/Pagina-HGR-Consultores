@@ -16,13 +16,13 @@ function App() {
     <div className="App">
       <Header />
       <Inicio />
-      <Nosotros />
+      {/* <Nosotros />
       <Servicios />
       <Proyectos />
       { state.abierto 
         && <Contacto />
       }
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
