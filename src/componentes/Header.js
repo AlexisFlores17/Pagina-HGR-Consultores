@@ -46,11 +46,14 @@ export const Header = () =>{
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        myHeader.style.top = "0";
-    } else {
-        myHeader.style.top = "-100px";
+    if ( currentScrollPos > 150) {
+        if (prevScrollpos > currentScrollPos) {
+            myHeader.style.top = "0";
+        } else {
+            myHeader.style.top = "-100px";
+        }
     }
+    
     prevScrollpos = currentScrollPos;
     }
 
