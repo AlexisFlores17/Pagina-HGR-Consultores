@@ -11,9 +11,11 @@ export const MisionVision = () =>{
     let misionVision = useRef(null);
 
     useEffect(() => {
-        enter()
-        return () => {
-        }
+        
+        // let master = gsap.timeline()
+        // master.add( enter() )
+        // master.add( floating() )
+        
     }, [])
 
     const enter = () => {
@@ -23,25 +25,43 @@ export const MisionVision = () =>{
                 trigger: misionVision,
                 start: "top center",
                 end: "top 50px",
-                markers: false,
+                markers: true,
                 toggleActions: "play pause reverse reset",
                 scrub: true,
             },
         })
         tl.from(circuloAzul,{
             x: "-50vw",
-            duration: 60
+            duration: 60,
+            ease: "power3.inOut"
         })
         tl.from(circuloAmarillo,{
             x: "50vw",
-            duration: 60
-        },0)
+            duration: 60,
+            ease: "power3.inOut"
+        },0, "start")
+        tl.to(circuloAzul,{
+            css: {animation: "circle 6s linear infinite"},
+            ease: "power3.inOut",
+            delay: 1
+        }, "start")
+        tl.to(circuloAmarillo,{
+            css: {animation: "circle2 6s linear infinite"},
+            ease: "power3.inOut"
+        }, "start")
+
+        return tl;
+    }
+
+    const floating = () => {
+        let tl = gsap.timeline();
+
         tl.to(circuloAzul,{
             css: {animation: "circle 6s linear infinite"}
-        })
+        },"start")
         tl.to(circuloAmarillo,{
             css: {animation: "circle2 6s linear infinite"}
-        })
+        }, "start")
 
         return tl;
     }

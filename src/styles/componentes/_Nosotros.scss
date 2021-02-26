@@ -170,7 +170,7 @@ $amarillo: #BF9000;
 .circulo-animado{
     width: 220px;
     height: 220px;
-    background-color: rgba($color: $azul, $alpha: 0.54);
+    background-color: rgba($color: $azul, $alpha: 0.3);
     border-radius: 50%;
     @media screen and (max-width: 620px){
         flex-flow: column;
@@ -181,15 +181,15 @@ $amarillo: #BF9000;
 
 .azul{
     margin-right: 100px;
-    // animation: circle 6s linear infinite;
+    animation: circle 6s linear infinite;
     @media screen and (max-width: 620px){
         margin-bottom: 40px;
     }
 }
 
 .amarillo{
-    background-color: rgba($color: $amarillo, $alpha: 0.54) !important;
-    // animation: circle2 6s linear infinite;
+    background-color: rgba($color: $amarillo, $alpha: 0.3) !important;
+    animation: circle2 6s linear infinite;
 }
 
 .mv-texto-container{
