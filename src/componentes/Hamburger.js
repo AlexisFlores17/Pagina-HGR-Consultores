@@ -91,13 +91,13 @@ export default function Hamburger({state}) {
                         <div className="menu-links">
                             <nav>
                                 <ul>
-                                    <li ref = {el => (line1 = el)}>inicio</li>
-                                    <li ref = {el => (line2 = el)}>nosotros</li>
-                                    <li ref = {el => (line3 = el)}>servicios</li>
-                                    <li ref = {el => (line4 = el)}>contacto</li>
+                                    <li ref = {el => (line1 = el)} className= "menuLi" >inicio</li>
+                                    <li ref = {el => (line2 = el)} className= "menuLi" >nosotros</li>
+                                    <li ref = {el => (line3 = el)} className= "menuLi" >servicios</li>
+                                    <li ref = {el => (line4 = el)} className= "menuLi" >contacto</li>
                                 </ul>
                             </nav>
-                            <div ref = {el => (aviso = el)} className="aviso">aviso de provacidad</div>
+                            <div ref = {el => (aviso = el)} className="aviso">aviso de privacidad</div>
                         </div>
                     </div>
                 </div>
