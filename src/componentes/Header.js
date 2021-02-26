@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import Hamburger from './Hamburger'
 export const Header = () =>{
+    let myHeader = useRef(null)
 
     const [state, setState] = useState({
         initial: false,
@@ -29,7 +30,7 @@ export const Header = () =>{
         else if(state.clicked === false){
             setState({
                 clicked: !state.clicked,
-                menuName: "Close"
+                menuName: "Cerrar"
             })
             
         }
@@ -42,11 +43,20 @@ export const Header = () =>{
         }, 1200)
     }
 
-
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        myHeader.style.top = "0";
+    } else {
+        myHeader.style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+    }
 
 
     return (
-        <header >
+        <header ref = {el => (myHeader= el)} >
             <div className="container">
                 <div className="wrapper">
                     <div className="inner-header">
@@ -55,7 +65,7 @@ export const Header = () =>{
                         </div>
                         
                         <div className="menu">
-                            <button disabled={disabled} onClick={handleMenu}>Menu</button>
+                            <button disabled={disabled} onClick={handleMenu}>{state.menuName}</button>
                         </div>
                     </div>
                 </div>

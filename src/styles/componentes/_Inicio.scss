@@ -12,23 +12,32 @@
                 font-style: normal;
                 font-weight: normal;
                 font-size: 60px;
-                line-height: 90px;        
+                line-height: 90px;  
+                color: $azul;      
                 .bottom-line{                    
                     font-size: 20px;
                     
                     text-align: center;
                     line-height: 40px; 
+                    
                     .line{                        
                         width: 500px;   
                         float: left;
-                        border-bottom: 2px solid black;  
+                        border-bottom: 2px solid $azul;  
                         position: absolute;
                         bottom: 0;
+                        
                     }
                     .contact{                                        
                         width: 190px;   
                         float: right;                                  
-                        border-bottom: 2px solid black;                                             
+                        border-bottom: 2px solid $azul;  
+                        background-color: rgba($color: #fff, $alpha: 0.5);                        
+                        &:hover{
+                            color: #BF9000;
+                            border-bottom: 2px solid#BF9000;
+                            cursor: pointer;
+                        }                                           
                     }
 
                 }        
@@ -38,4 +47,67 @@
             
         }
     }
+}
+
+.downImg{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;    
+    width: 100%;
+    .imageDown{
+        position: absolute;
+        bottom: 10%;   
+        margin: 0 auto;    
+    }
+}
+
+.imageRight{
+    float: right;    
+    margin-top: 20%
+}
+.imageLeft{
+    margin-top: 20%
+
+}
+
+/* Use a media query to add a breakpoint at 770px: */
+@media screen and (max-width: 760px) {
+    .content {        
+        // background-color: saddlebrown;
+        width: 400px !important;
+        font-size: 40px !important;
+        line-height: 50px !important;
+        .bottom-line{
+            .line{
+                width: 200px !important;
+            }
+            .contact{
+                width: 170px !important;
+            }
+            
+        }
+    }
+   
+    img{
+        width: 250px;
+    }
+  }
+@media screen and (max-width: 610px) {
+    .content {      
+        background-color: #BF9000;  
+        width: 300px !important;
+        font-size: 30px !important;
+        line-height: 40px !important;
+       
+        .bottom-line{
+            .line{
+                width: 150px !important;
+            }
+            .contact{
+                width: 140px !important;
+            }
+            
+        }
+    }
+
 }
