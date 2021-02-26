@@ -376,14 +376,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     @media screen and (max-width: 375px){
-        margin-top: 0px;
-        margin-bottom: 15px;
+        margin-top: 10px;
     }
     @media screen and (max-width: 320px){
         font-size: 8px;
-        margin-bottom: 12px;
     }
 }
