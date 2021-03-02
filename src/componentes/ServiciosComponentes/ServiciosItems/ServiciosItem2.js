@@ -23,10 +23,10 @@ export const ServiciosItem2 = (props) =>{
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
                         <p>
-                        Es	una	realidad	que	lo	único	seguro	que	tenemos	es	la	muerte	y	los	impuestos...	y	muchos	le	tememos	más	a	los	impuestos.	Todo	 negocio	 debe estar	 blindado	 contra	las	 autoridades	 fiscales,	 y	esto	se	logra	únicamente	pagando	de	manera	correcta	y	oportuna	todo	aquel	 impuesto	 aplicable	al	 mismo	 negocio.¿Conozco	los	 impuestos	que	tengo	que	pagar	por	cada	operación	que	realizo?	¿Estaré	exento	de	pagar alguno?
+                        Es	una	realidad	que	lo	único	seguro	que	tenemos	es	la	muerte	y	los	impuestos...	y	muchos	le	tememos	más	a	los	impuestos.	Todo	 negocio	 debe estar	 blindado	 contra	las	 autoridades	 fiscales,	 y	esto	se	logra	únicamente	pagando	de	manera	correcta	y	oportuna	todo	aquel	 impuesto	 aplicable	al	 mismo	 negocio. ¿Conozco	los	 impuestos	que	tengo	que	pagar	por	cada	operación	que	realizo?	¿Estaré	exento	de	pagar alguno?
                         </p>
                         <p>
-                        Evita	recargos,	sanciones	y	multas	que	pueden	llevar	a	tu	negocio	a	la	bancarrota	y	a	tu	patrimonio	a	un	hundimiento	irreversible
+                        Evita	recargos,	sanciones	y	multas	que	pueden	llevar	a	tu	negocio	a	la	bancarrota	y	a	tu	patrimonio	a	un	hundimiento	irreversible.
                         </p>
                     </div>  
                     <div className="serviciosMenuContenidoLista">
@@ -40,7 +40,7 @@ export const ServiciosItem2 = (props) =>{
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">3</div>
-                            <div className="menuListaNombre" >	Declaraciones	informativa</div>
+                            <div className="menuListaNombre" >	Declaraciones	informativas</div>
                         </div>  
                         <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">4</div>
