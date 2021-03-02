@@ -31,9 +31,13 @@ export const ServiciosItem5 = (props) =>{
                             <div className="menuListaNumero">1</div>
                             <div className="menuListaNombre">Flujos de efectivo descontados </div>
                         </div>  
-                        <div className="menuListaItem">
+                        <div className="menuListaItem lineMenu">
                             <div className="menuListaNumero">2</div>
                             <div className="menuListaNombre">Múltiplos</div>
+                        </div>  
+                        <div className="menuListaItem">
+                            <div className="menuListaNumero">3</div>
+                            <div className="menuListaNombre">Activos intangibles</div>
                         </div>    
                     </div>              
                 </div>

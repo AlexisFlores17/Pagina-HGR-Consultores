@@ -8,7 +8,7 @@ export const ServiciosItem4 = (props) =>{
 
         <div className="serviciosItem lineMenu" >
             <div className="serviciosMenu" >
-                <div className="serviciosMenuTitulo" >Elaboración de proyectos financieros
+                <div className="serviciosMenuTitulo" >Elaboración de proyectos financieros y presupuestos
 </div>
                 {dropDownMenu ===4 ? 
                     <div className="serviciosMenuIconoCirculoDespliege" onClick={e=>lista(e,4)}>         
