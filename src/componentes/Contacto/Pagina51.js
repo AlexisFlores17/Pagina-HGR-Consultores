@@ -21,7 +21,7 @@ export const Pagina51 = () => {
         } else if ( value === "otro"){
             dispatch( cambiarPagina( 62 ) );
         } else {
-            dispatch( cambiarPagina( 7 ) );
+            dispatch( cambiarPagina( 71 ) );
         }
     }
 

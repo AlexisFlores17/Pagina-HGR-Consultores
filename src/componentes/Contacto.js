@@ -16,6 +16,7 @@ import { Pagina61 } from './Contacto/Pagina61';
 import { Pagina62 } from './Contacto/Pagina62';
 import { Pagina63 } from './Contacto/Pagina63';
 import { Pagina7 } from './Contacto/Pagina7';
+import { PaginaTexto } from './Contacto/PaginaTexto';
 
 export const Contacto = () =>{
 
@@ -49,6 +50,8 @@ export const Contacto = () =>{
                 return <Pagina62 />
             case 63: 
                 return <Pagina63 />
+            case 71: 
+                return <PaginaTexto />
             case 7: 
                 return <Pagina7 />
             default:

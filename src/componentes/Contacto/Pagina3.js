@@ -12,11 +12,15 @@ export const Pagina3 = () => {
 
     const setSituacion = (value) => {
         dispatch( setConozcoSituacion(value) );
-        siguiente();
+        siguiente( value );
     }
 
-    const siguiente = () => {
-        dispatch( cambiarPagina( 4 ) );
+    const siguiente = (value) => {
+        if (value) {
+            dispatch( cambiarPagina( 4 ) );
+        } else {
+            dispatch( cambiarPagina( 71 ))
+        }
     }
 
     const anterior = () => {

@@ -19,7 +19,6 @@ export const Pagina7 = () => {
     const enviar = async () => {
 
         setEnviando(true);
-        console.log("enviado")
 
         try {
             const peticion = await axios({
@@ -54,17 +53,19 @@ export const Pagina7 = () => {
     }
 
     const anterior = () => {
-        if (state.tipoPersona2 === "mercantil") {
-            dispatch( cambiarPagina( 61 ) );
-        } else if( state.tipoPersona2 === "otro"){
-            dispatch( cambiarPagina( 62 ) );
-        } else if ( state.residencia === "mexico"){
-            dispatch( cambiarPagina( 63 ) );
-        } else if ( state.residencia === "extranjero"){
-            dispatch( cambiarPagina( 52 ) );
-        } else{
-            dispatch( cambiarPagina( 51 ) );
-        }
+        // if (state.tipoPersona2 === "mercantil") {
+        //     dispatch( cambiarPagina( 61 ) );
+        // } else if( state.tipoPersona2 === "otro"){
+        //     dispatch( cambiarPagina( 62 ) );
+        // } else if ( state.residencia === "mexico"){
+        //     dispatch( cambiarPagina( 63 ) );
+        // } else if ( state.residencia === "extranjero"){
+        //     dispatch( cambiarPagina( 52 ) );
+        // } else{
+        //     dispatch( cambiarPagina( 51 ) );
+        // }
+
+        dispatch( cambiarPagina(71) );
     }
 
     return (

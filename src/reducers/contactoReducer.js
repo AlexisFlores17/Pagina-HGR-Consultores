@@ -12,6 +12,7 @@ export const contactoReducer = ( initialState = {
     tipoPersona2: "",
     tipoPersona3: "",
     residencia: "",
+    notas: "",
     pagina: 1
     
 }, action )=>{
