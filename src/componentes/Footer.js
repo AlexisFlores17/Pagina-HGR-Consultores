@@ -36,10 +36,10 @@ export const Footer = () =>{
             </div>
             <div className="footerParteInferior" >
                 <div className="footerEmpresa" >&copy; {new Date().getFullYear()} HGR consultores </div>
-                <div className="footerEmpresaLink" >Suported by <a href="#">Light & Sound Disruptive Lab</a> </div>
+                <div className="footerEmpresaLink" >Suported by <a href="#"> Light & Sound Disruptive Lab</a> </div>
                 <div className="footerAvisoPrivacidad" > Aviso de Privacidad</div>
             </div>
-            <div className="footerEmpresaLinkMovil" >Suported by <a href="#">Light & Sound Disruptive Lab</a> </div>
+            <div className="footerEmpresaLinkMovil" >Suported by <a href="#" className="ml-1"> Light & Sound Disruptive Lab</a> </div>
         </div>
     );
 }
