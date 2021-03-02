@@ -379,9 +379,17 @@
         margin-bottom: 40px;
     }
     @media screen and (max-width: 375px){
+<<<<<<< HEAD
         margin-top: 15px;
     }
     @media screen and (max-width: 320px){
         font-size: 8px;
+=======
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    @media screen and (max-width: 320px){
+        margin-bottom: 12px;
+>>>>>>> PapuAlex
     }
 }
