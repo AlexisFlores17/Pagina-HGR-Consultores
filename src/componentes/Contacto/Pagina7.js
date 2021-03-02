@@ -33,7 +33,8 @@ export const Pagina7 = () => {
                     "tipoPersona": getTipoPersona(state.tipoPersona),
                     "tipoPersona2": getTipoPersona2(state.tipoPersona2),
                     "tipoPersona3": getTipoPersona3(state.tipoPersona3),
-                    "residencia": getResidencia(state.residencia)
+                    "residencia": getResidencia(state.residencia),
+                    "notas": state.notas
                 }
             })
 
