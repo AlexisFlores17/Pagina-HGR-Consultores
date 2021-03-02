@@ -8,7 +8,7 @@ export const ServiciosItem3 = (props) =>{
 
         <div className="serviciosItem lineMenu" >
             <div className="serviciosMenu" >
-                <div className="serviciosMenuTitulo" >Cálculo de nóminas de seguridad social</div>
+                <div className="serviciosMenuTitulo" >Cálculo de nóminas y contribuciones de seguridad social</div>
                 {dropDownMenu ===3 ? 
                     <div className="serviciosMenuIconoCirculoDespliege" onClick={e=>lista(e,3)}>         
                         <RiArrowUpLine className="serviciosMenuIconoDespliege" />
@@ -23,7 +23,7 @@ export const ServiciosItem3 = (props) =>{
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
                         <p>
-                        Si	bien	la	mayoría	de	las	personastiene	identificado	al	SAT	como	un	ente	al	que	hay	que	tenerlecuidado	e	incluso	miedo,	es	el	IMSS	el	quepuede	superar	cualquier	expectativa.
+                        Si	bien	la	mayoría	de	las	personas tiene	identificado	al	SAT	como	un	ente	al	que	hay	que	tenerle cuidado	e	incluso	miedo,	es	el	IMSS	el	que puede	superar	cualquier	expectativa.
                         </p>
                         <p>
                         Toda	empresa	o	persona	física	que	tenga	empleados	debe	de	calcular	y	enterar	de	manera	perfecta	todas	sus	obligaciones	en	materia	laboral	y	de	seguridad	social.	Ten	la	certeza	 de	 que	 estás	 cumpliendo	con	 las	 mismas	 y	 evita	 problemas	para	 tu	 negocio como	pueden	 ser	demandas	 laborales o multas considerables.

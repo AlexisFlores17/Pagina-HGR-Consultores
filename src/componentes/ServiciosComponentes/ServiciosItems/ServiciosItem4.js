@@ -24,10 +24,10 @@ export const ServiciosItem4 = (props) =>{
                 <div className="serviciosMenuContenido lineMenuTop">
                     <div className="serviciosMenuContenidoTexto">
                         <p>
-                        ¿Tienes	un	nuevo	proyectode	inversióno	necesitas	presupuestarlos	resultados	 de	 tu	 actual	 proyecto?Organiza	 los	 recursos	 humanos,	materiales	y	financieros	con	los	que	cuentas	para	llegar	a	los	objetivos	y	 metas	de	 este.
+                        ¿Tienes	un	nuevo	proyecto de	inversión o	necesitas	presupuestar los	resultados	 de	 tu	 actual	 proyecto? Organiza	 los	 recursos	 humanos,	materiales	y	financieros	con	los	que	cuentas	para	llegar	a	los	objetivos	y	 metas	de	 este.
                         </p>
                         <p>
-                        Conoce	las	 diferentes	razonesfinancieras	de	 tu	proyecto,	las	tasas	de	descuento,	el	valor	presente	neto,	entre	algunos	otros	indicadores	que	podrán	determinar	el	rumbo del negocio
+                        Conoce	las	 diferentes	razones financieras	de	 tu	proyecto,	las	tasas	de	descuento,	el	valor	presente	neto,	entre	algunos	otros	indicadores	que	podrán	determinar	el	rumbo del negocio.
                         </p>
                     </div>  
                     <div className="serviciosMenuContenidoLista">
