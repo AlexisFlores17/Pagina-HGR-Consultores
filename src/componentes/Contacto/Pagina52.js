@@ -19,7 +19,7 @@ export const Pagina52 = () => {
         if( value === "mexico"){
             dispatch( cambiarPagina( 63 ) );
         }else{
-            dispatch( cambiarPagina(7) );
+            dispatch( cambiarPagina(71) );
         }
     }
 

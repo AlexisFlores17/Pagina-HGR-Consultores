@@ -16,7 +16,7 @@ export const Pagina62 = () => {
     }
 
     const siguiente = () => {
-        dispatch( cambiarPagina( 7 ) );
+        dispatch( cambiarPagina( 71 ) );
     }
 
     const anterior = () => {

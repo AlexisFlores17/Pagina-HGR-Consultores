@@ -26,6 +26,7 @@ export const Pagina4 = () => {
     }
 
     const anterior = () => {
+        dispatch( setAreaAyuda("") );
         dispatch( cambiarPagina( 3 ) );
     }
 

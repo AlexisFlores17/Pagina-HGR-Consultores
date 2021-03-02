@@ -108,6 +108,15 @@ export const setResidencia = (value)=>{
     }
 }
 
+export const setNotas = (value)=>{
+    return{
+        type: types.ActualizarContacto,
+        payload:{
+            notas: value,
+        }
+    }
+}
+
 export const reset = ()=>{
     return{
         type: types.resetContacto,
