@@ -6,7 +6,7 @@ export const Header = () =>{
     const [state, setState] = useState({
         initial: false,
         clicked: null,
-        menuName: "Menu"
+        menuName: "Menú"
     })
 
     const [disabled, setDisabled] = useState(false)
@@ -23,7 +23,7 @@ export const Header = () =>{
         }else if(state.clicked === true){
             setState({
                 clicked: !state.clicked,
-                menuName: "Menu"
+                menuName: "Menú"
             })
             
         }

@@ -10,7 +10,7 @@ export const NosotrosMain = () =>{
                         <div className="nosotros-titulo">
                             <div className="divider"></div>
                             <h1>Nosotros</h1>
-                            <p>Asesoría fiscal, contable enfocada en el mejor desarrollo de empresarios a nivel nacional.</p>
+                            <p>Asesoría fiscal, contable y financiera enfocada en el mejor desarrollo de empresarios a nivel nacional.</p>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ export const NosotrosMain = () =>{
                         HGR Consultores comenzó como un proyecto 
                         de protección fiscal para pequeños y medianos 
                         contribuyentes, es así que ahora somos una 
-                        firma dedicada a la asesoría fiscal, contable 
+                        firma dedicada a la asesoría fiscal, contable y financiera 
                         enfocada en el mejor desarrollo de empresarios 
                         a nivel nacional.
                     </p>
@@ -42,7 +42,7 @@ export const NosotrosMain = () =>{
                         Nos basamos en la generación de información 
                         financiera confiable, veraz y oportuna para 
                         así darle pie al cumplimiento de obligaciones 
-                        fiscales, creando así una atmósfera en la que   
+                        fiscales, creando una atmósfera en la que   
                         se tiene una buena relación con las autoridades 
                         fiscales y en la que se tiene información útil 
                         para la toma de decisiones del empresario.      

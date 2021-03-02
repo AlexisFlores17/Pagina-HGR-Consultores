@@ -76,11 +76,11 @@ export const MisionVision = () =>{
                 </div>
                 <div className="mv-texto-container">
                     <div className="mv-row first-row">
-                        <h3>misión, visión</h3>
+                        <h3>Misión, visión</h3>
                         <p>
                             Estamos convencidos de que la asesoría contable, 
                             fiscal y financiera está siempre detrás de una 
-                            empresa sólida y fuerte. por eso nuestra meta es 
+                            empresa sólida y fuerte. Por eso nuestra meta es 
                             crear y mantener una cultura de negocios en la que 
                             la formalidad y la legalidad, sean los pilares de 
                             emprendedores y empresarios exitosos.
@@ -90,10 +90,10 @@ export const MisionVision = () =>{
                         <p>
                             Estamos comprometidos a ofrecer el mejor servicio a 
                             nuestros clientes, brindándoles asesorías profesionales 
-                            y siempre siguiendo el código de ética. así como a 
+                            y siempre siguiendo el código de ética. Así como a 
                             impulsarlos a llevar a cabo buenas prácticas fiscales y 
                             financieras, para nunca entorpecer el negocio en marcha. 
-                            es por esto que cualquier servicio, planeación o estrategia 
+                            Es por esto que cualquier servicio, planeación o estrategia 
                             que nosotros recomendemos, estará siempre apegada a un marco 
                             legal vigente, garantizando la tranquilidad de nuestros clientes. 
                         </p>
