@@ -8,7 +8,7 @@ export const ServiciosItem1 = (props) =>{
 
         <div className="serviciosItem lineMenu" >
             <div className="serviciosMenu" >
-                <div className="serviciosMenuTitulo" >Contabilida de personas físicas y morales</div>
+                <div className="serviciosMenuTitulo" >Contabilidad de personas físicas y morales</div>
                 {dropDownMenu ===1 ? 
                     <div className="serviciosMenuIconoCirculoDespliege" onClick={e=>lista(e,1)}>         
                         <RiArrowUpLine className="serviciosMenuIconoDespliege" />
@@ -33,7 +33,7 @@ export const ServiciosItem1 = (props) =>{
                         <p>
                             Asegúrate de que la contabilidad de tu empresa se apegue a la
                             normatividad financiera aplicable y cuente con los estados financieros
-                            adecuados, evita contratiempos y protege tu negocio.
+                            adecuados. Evita contratiempos y protege tu negocio.
                         </p>
                     </div>  
                     <div className="serviciosMenuContenidoLista">
