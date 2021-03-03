@@ -1,7 +1,16 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { abrirContacto } from '../actions/contactoActions';
 import {Header} from './Header'
 import Pictures from "./Pictures";
+
 export const Inicio = () =>{
+
+    const dispatch = useDispatch();
+
+    const clickContacto = () => {
+        dispatch( abrirContacto() )
+    }
 
     return(
         <div className="inicio" >
@@ -17,7 +26,7 @@ export const Inicio = () =>{
                             </h5>
                             <div className="bottom-line">
                                 <div className="line"></div>
-                                <div className="contact">CONTACTO</div>
+                                <div className="contact" onClick={() => clickContacto()}>CONTACTO</div>
                             </div>                                                
                         </div>                        
                         

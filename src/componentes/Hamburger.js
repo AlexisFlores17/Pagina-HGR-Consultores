@@ -1,5 +1,10 @@
 import React, {useEffect, useRef} from 'react'
 import gsap, { Ease } from 'gsap'
+
+import { useDispatch } from 'react-redux';
+import { abrirContacto } from '../actions/contactoActions';
+
+
 export default function Hamburger({state}) {
     
     //vars for animating Dom
@@ -82,6 +87,12 @@ export default function Hamburger({state}) {
         });
     };
 
+    const dispatch = useDispatch();
+
+    const clickContacto = () => {
+        dispatch( abrirContacto() )
+    }
+
     return (
         <div ref = {el => (menu = el)} className="hamburger-menu">
             <div ref = {el => (revealMenuBackgroud = el)} className="menu-secondary-background-color"></div> 
@@ -94,7 +105,7 @@ export default function Hamburger({state}) {
                                     <li ref = {el => (line1 = el)} className= "menuLi" >inicio</li>
                                     <li ref = {el => (line2 = el)} className= "menuLi" >nosotros</li>
                                     <li ref = {el => (line3 = el)} className= "menuLi" >servicios</li>
-                                    <li ref = {el => (line4 = el)} className= "menuLi" >contacto</li>
+                                    <li ref = {el => (line4 = el)} className= "menuLi" onClick={() => clickContacto()} >contacto</li>
                                 </ul>
                             </nav>
                             <div ref = {el => (aviso = el)} className="aviso">aviso de privacidad</div>
