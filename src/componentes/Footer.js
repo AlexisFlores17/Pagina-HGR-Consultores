@@ -8,17 +8,17 @@ export const Footer = () =>{
                 <div className="footerSocial" >
                     <div className="social">Social</div>
                     <div className="redesContenido">
-                        <div className="redes" ><a href="#">Linkedin</a></div>
-                        <div className="redes" ><a href="#">Youtube</a></div>
-                        <div className="redes" ><a href="#">Spotify</a></div>
-                        <div className="redes" ><a href="#">Facebook</a></div>
+                        <div className="redes" ><a href="https://www.linkedin.com/company/hgr-consultores/" target="_blank">Linkedin</a></div>
+                        <div className="redes" ><a href="https://www.youtube.com/channel/UClRXHZkMR-rsfJ43lrTVXYg" target="_blank">Youtube</a></div>
+                        <div className="redes" ><a href="https://open.spotify.com/show/7onU4tNA0HhMdymcHixJZy?si=XWkX_JXkQxu1IFhMQnKuuw&nd=1" target="_blank">Spotify</a></div>
+                        <div className="redes" ><a href="https://www.facebook.com/consultoreshgr" target="_blank">Facebook</a></div>
                     </div>
                 </div>
                 <div className="footerContacto" >
                     <div className="contacto">Contacto</div>
                     <div className="footerContactoContenido">   
-                        <div className="datos" >info@hgrconsultores.com.mx</div>
-                        <div className="datos" >55 61725993</div>
+                        <div className="datos" ><a href="mailto:info@hgrconsultores.com.mx">info@hgrconsultores.com.mx</a></div>
+                        <div className="datos" ><a href="tel:5561725993">55 61725993</a></div>
                     </div>
                 </div>
                 <div className="footerOficina" >
@@ -36,10 +36,10 @@ export const Footer = () =>{
             </div>
             <div className="footerParteInferior" >
                 <div className="footerEmpresa" >&copy; {new Date().getFullYear()} HGR consultores </div>
-                <div className="footerEmpresaLink" >Suported by <a href="#"> Light & Sound Disruptive Lab</a> </div>
+                <div className="footerEmpresaLink" >Suported by <a href="https://lsdlab.com.mx/" target="_blank" > Light & Sound Disruptive Lab</a> </div>
                 <div className="footerAvisoPrivacidad" > Aviso de Privacidad</div>
             </div>
-            <div className="footerEmpresaLinkMovil" >Suported by <a href="#" className="ml-1"> Light & Sound Disruptive Lab</a> </div>
+            <div className="footerEmpresaLinkMovil" >Suported by <a href="https://lsdlab.com.mx/" target="_blank" className="ml-1"> Light & Sound Disruptive Lab</a> </div>
         </div>
     );
 }
