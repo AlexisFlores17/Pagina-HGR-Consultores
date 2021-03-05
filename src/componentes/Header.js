@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import Hamburger from './Hamburger'
 export const Header = () =>{
     let myHeader = useRef(null)
@@ -44,6 +44,14 @@ export const Header = () =>{
     }
 
     var prevScrollpos = window.pageYOffset;
+
+    useEffect(() => {
+        
+        return () => {
+            
+        }
+    }, [])
+
     window.onscroll = function() {
         if(state.clicked === false){
             var currentScrollPos = window.pageYOffset;
