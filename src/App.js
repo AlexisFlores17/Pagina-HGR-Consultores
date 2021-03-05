@@ -18,16 +18,16 @@ function App() {
     <div className="App">
       <Loader />
       
-      { state.abierto ?
-        <Contacto />
-        : <>
-            <Header />
-            <Inicio />
-            <Nosotros />
-            <Servicios />
-            <Proyectos />
-            <Footer />
-          </>
+      { (!state.abierto && !state.aviso) ?
+        <>
+          <Header />
+          <Inicio />
+          <Nosotros />
+          <Servicios />
+          <Proyectos />
+          <Footer />
+        </>
+        : <Contacto />
       }
 
       {
