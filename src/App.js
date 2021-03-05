@@ -7,6 +7,8 @@ import {Proyectos}  from "./componentes/Proyectos";
 import {Contacto}   from "./componentes/Contacto";
 import {Footer}     from "./componentes/Footer";
 import { Inicio } from "./componentes/Inicio";
+import Loader from "./componentes/Loader";
+import { AvisoDePrivacidad } from "./componentes/AvisoDePrivacidad";
 
 function App() {
 
@@ -14,8 +16,10 @@ function App() {
 
   return (
     <div className="App">
+      <Loader />
       <Header />
       <Inicio />
+      {/* <AvisoDePrivacidad /> */}
       <Nosotros />
       <Servicios />
       <Proyectos />

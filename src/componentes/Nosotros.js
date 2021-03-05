@@ -37,9 +37,11 @@ export const Nosotros = () =>{
     return(
         <>
             {/* <div className="ejemplo"></div> */}
-            <NosotrosMain />
-            <MisionVision />
-            <CuadroAzul /> 
+            <div id="nosotros">
+                <NosotrosMain />
+                <MisionVision />
+                <CuadroAzul />
+            </div>
         </>
     );
 }

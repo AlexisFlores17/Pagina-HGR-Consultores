@@ -13,7 +13,7 @@ export const Inicio = () =>{
     }
 
     return(
-        <div className="inicio" >
+        <div className="inicio" id="inicio" >
             <div className="container" >
                 <div className="wrapper" >
                     <div className="home">
