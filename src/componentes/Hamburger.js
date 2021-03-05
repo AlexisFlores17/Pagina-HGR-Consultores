@@ -20,8 +20,41 @@ export default function Hamburger({state, handleMenu}) {
 
     useEffect(() => {
         openCloseMenu()
-        console.log("estado----", state)
     },[state])
+
+    const openCloseMenu = () => {
+        
+        if(state.clicked === false){
+            //close menu
+            gsap.to([revealMenu, revealMenuBackgroud], {
+                duration: 0.8,
+                width: 0,
+                x: "50vw",                
+                ease: "power3.inOut",
+                stagger: {
+                    amount: 0.07
+                }   
+            });
+            gsap.to(menu, {
+                duration: 1,
+                css: {display: 'none'}
+            })
+        }else if(state.clicked === true || state.clicked === true && state.initial === null){
+            gsap.to(menu, {
+                duration: 0,
+                css: {display: "block"}
+            })
+            gsap.to([revealMenuBackgroud, revealMenu], {
+                duration: 0,
+                opacity: 1,
+                width: "100%",
+                x: 0
+            })
+            staggerReveal(revealMenuBackgroud, revealMenu)
+            staggerText(line1, line2, line3, line4)
+            fadeInUp(aviso)
+        }
+    }
 
     const staggerReveal = (node1, node2) => {
         gsap.from([node1, node2], {
@@ -64,49 +97,21 @@ export default function Hamburger({state, handleMenu}) {
         dispatch( abrirContacto() )
     }
 
-    const openCloseMenu = () => {
-        
-        if(state.clicked === false){
-            //close menu
-            gsap.to([revealMenu, revealMenuBackgroud], {
-                duration: 0.8,
-                width: 0,
-                x: "50vw",                
-                ease: "power3.inOut",
-                stagger: {
-                    amount: 0.07
-                }   
-            });
-            gsap.to(menu, {
-                duration: 1,
-                css: {display: 'none'}
-            })
-        }else if(state.clicked === true || state.clicked === true && state.initial === null){
-            gsap.to(menu, {
-                duration: 0,
-                css: {display: "block"}
-            })
-            gsap.to([revealMenuBackgroud, revealMenu], {
-                duration: 0,
-                opacity: 1,
-                width: "100%",
-                x: 0
-            })
-            staggerReveal(revealMenuBackgroud, revealMenu)
-            staggerText(line1, line2, line3, line4)
-            fadeInUp(aviso)
-        }
-    }
+    
 
     return (
-        <div ref = {el => (menu = el)} className="hamburger-menu">
-            <div ref = {el => (revealMenuBackgroud = el)} className="menu-secondary-background-color"></div> 
+        <div ref = {el => (menu = el)} className="hamburger-menu">                                    
+            <div ref = {el => (revealMenuBackgroud = el)} className="menu-secondary-background-color"></div>             
+            
             <div ref = {el => (revealMenu = el)} className="menu-layer">
                 <div className="container">
-                    <div className="wrapper">
+                    
+                    <div className="wrapper">                        
                         <div className="menu-links">
+                            
                             <nav>
                                 <ul>
+                                
                                     <li ref = {el => (line1 = el)} className= "menuLi" onClick={handleMenu}><a href="#inicio" >inicio</a></li>
                                     <li ref = {el => (line2 = el)} className= "menuLi" onClick={handleMenu}><a href="#nosotros" >nosotros</a></li>
                                     <li ref = {el => (line3 = el)} className= "menuLi" onClick={handleMenu}><a href="#servicios">servicios</a></li>

@@ -21,7 +21,6 @@ export const Header = () =>{
             })
             
         }else if(state.clicked === true){
-            console.log(state)
             setState({
                 clicked: !state.clicked,
                 menuName: "Menú"
@@ -44,26 +43,21 @@ export const Header = () =>{
         }, 1200)
     }
 
-    const changeMenuState = () => {
-        setState({
-            // initial: false,
-            clicked: !state.clicked,
-            menuName: "Menú"
-        })        
-   };
-
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if ( currentScrollPos > 150) {
-        if (prevScrollpos > currentScrollPos) {
-            myHeader.style.top = "0";
-        } else {
-            myHeader.style.top = "-100px";
+        if(state.clicked === false){
+            var currentScrollPos = window.pageYOffset;
+            if ( currentScrollPos > 150) {
+                if (prevScrollpos > currentScrollPos) {
+                    myHeader.style.top = "0";
+                } else {
+                    myHeader.style.top = "-100px";
+                }
+            }
+            
+            prevScrollpos = currentScrollPos;
         }
-    }
-    
-    prevScrollpos = currentScrollPos;
+        
     }
 
 
