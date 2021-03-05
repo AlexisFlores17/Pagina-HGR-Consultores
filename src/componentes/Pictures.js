@@ -29,13 +29,22 @@ export default function Pictures() {
     
 
     useEffect(() => {    
-        firstFade(refImg1, 6000)      
-        firstFade(refImg2, 4000)        
-        firstFade(refImg3, 5000)          
+        let isMounted = false
+        if(isMounted){
+            console.log("mounted")
+            firstFade(refImg1, 6000)      
+            firstFade(refImg2, 4000)        
+            firstFade(refImg3, 5000)          
+    
+            changePhoto(refImg1, 6000)
+            changePhoto2(refImg2, 4000)
+            changePhoto3(refImg3, 5000)            
+        }
 
-        changePhoto(refImg1, 6000)
-        changePhoto2(refImg2, 4000)
-        changePhoto3(refImg3, 5000)            
+        return () => {
+            isMounted = true;
+          };
+
     }, [])
 
     //Function to change picture 
@@ -108,9 +117,7 @@ export default function Pictures() {
     };
     
     // gsap.ticker.add(fadeInUp);
-    // gsap.ticker.lagSmoothing(0);
-
-    
+    // gsap.ticker.lagSmoothing(0);    
     
     return (
         <div>
