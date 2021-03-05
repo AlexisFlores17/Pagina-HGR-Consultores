@@ -19,7 +19,7 @@ function App() {
       <Loader />
       <Header />
       <Inicio />
-      <AvisoDePrivacidad />
+      {/* <AvisoDePrivacidad /> */}
       <Nosotros />
       <Servicios />
       <Proyectos />
