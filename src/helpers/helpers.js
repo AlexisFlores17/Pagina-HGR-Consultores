@@ -111,3 +111,4 @@ export const getResidencia = (value) => {
             return "Física"
     }
 }
+

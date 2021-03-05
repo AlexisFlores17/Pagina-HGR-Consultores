@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MdClose } from "react-icons/md";
 import { useDispatch} from 'react-redux';
 import { cerrarAviso } from '../actions/contactoActions';
 
 export const AvisoDePrivacidad = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+        
+    }, [])
 
     const dispatch = useDispatch();
     
