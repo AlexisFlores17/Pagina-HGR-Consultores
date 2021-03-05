@@ -4,16 +4,16 @@ import React, {useEffect} from 'react'
 
 export default function Loader() {
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        window.onload = function(){
-            document.querySelector(".loader").style.opacity = "0";
-            setTimeout(function(){
-              document.querySelector(".loader").style.display = "none";
-            },1000);
-        }
+    //     window.onload = function(){
+    //         document.querySelector(".loader").style.opacity = "0";
+    //         setTimeout(function(){
+    //           document.querySelector(".loader").style.display = "none";
+    //         },1000);
+    //     }
       
-    },[])
+    // },[])
 
 
     return (

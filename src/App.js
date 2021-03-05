@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import {useEffect} from 'react'
 
 import {Header}     from "./componentes/Header";
 import {Nosotros}   from "./componentes/Nosotros";
@@ -13,6 +14,17 @@ import { AvisoDePrivacidad } from "./componentes/AvisoDePrivacidad";
 function App() {
 
   const state = useSelector(state => state.contactoReducer)
+
+  useEffect(() => {
+
+    window.onload = function(){
+        document.querySelector(".loader").style.opacity = "0";
+        setTimeout(function(){
+          document.querySelector(".loader").style.display = "none";
+        },1000);
+    }
+  
+  },[]) 
 
   return (
     <div className="App">
