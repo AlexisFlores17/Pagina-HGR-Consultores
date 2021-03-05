@@ -3,6 +3,7 @@ import { types } from "../types/types";
 
 export const contactoReducer = ( initialState = {
     abierto: false,
+    aviso: false,
     nombre: "",
     correo: "",
     conozcoSituacion: false,

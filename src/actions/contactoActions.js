@@ -18,6 +18,24 @@ export const cerrarContacto = ()=>{
     }
 }
 
+export const abrirAviso = ()=>{
+    return{
+        type: types.ActualizarContacto,
+        payload:{
+            aviso: true
+        }
+    }
+}
+
+export const cerrarAviso = ()=>{
+    return{
+        type: types.ActualizarContacto,
+        payload:{
+            aviso: false
+        }
+    }
+}
+
 export const setNombre = (nombre)=>{
     return{
         type: types.ActualizarContacto,
