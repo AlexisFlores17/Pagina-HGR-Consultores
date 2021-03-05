@@ -1,6 +1,11 @@
 import React, {useState, useRef, useEffect} from 'react';
+import { useSelector } from 'react-redux';
 import Hamburger from './Hamburger'
+
 export const Header = () =>{
+
+    const redux = useSelector(state => state.contactoReducer)
+
     let myHeader = useRef(null)
 
     const [state, setState] = useState({
@@ -46,14 +51,17 @@ export const Header = () =>{
     var prevScrollpos = window.pageYOffset;
 
     useEffect(() => {
-        
+        if( redux.aviso ){
+            myHeader.style.display = "none"
+        }
         return () => {
             
         }
-    }, [])
+    }, [redux.aviso])
+
 
     window.onscroll = function() {
-        if(state.clicked === false){
+        if(state.clicked === false || state.initial === false){
             var currentScrollPos = window.pageYOffset;
             if ( currentScrollPos > 150) {
                 if (prevScrollpos > currentScrollPos) {

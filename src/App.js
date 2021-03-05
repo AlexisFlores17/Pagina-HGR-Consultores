@@ -17,10 +17,9 @@ function App() {
   return (
     <div className="App">
       <Loader />
-      
+      <Header />
       { (!state.abierto && !state.aviso) &&
         <>
-          <Header />
           <Inicio />
           <Nosotros />
           <Servicios />
