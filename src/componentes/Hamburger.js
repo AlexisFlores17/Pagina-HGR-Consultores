@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react'
 import gsap, { Ease } from 'gsap'
 
 import { useDispatch } from 'react-redux';
-import { abrirAviso, abrirContacto } from '../actions/contactoActions';
+import { abrirContacto } from '../actions/contactoActions';
 
 
 export default function Hamburger({state, handleMenu}) {
@@ -64,10 +64,6 @@ export default function Hamburger({state, handleMenu}) {
         dispatch( abrirContacto() )
     }
 
-    const clickAviso = () => {
-        dispatch( abrirAviso() )
-    }
-
     const openCloseMenu = () => {
         
         if(state.clicked === false){
@@ -117,7 +113,7 @@ export default function Hamburger({state, handleMenu}) {
                                     <li ref = {el => (line4 = el)} className= "menuLi" onClick={() => clickContacto()} >contacto</li>
                                 </ul>
                             </nav>
-                            <div ref = {el => (aviso = el)} className="aviso" onClick={() => clickAviso()} >aviso de privacidad</div>
+                            <div ref = {el => (aviso = el)} className="aviso">aviso de privacidad</div>
                         </div>
                     </div>
                 </div>
