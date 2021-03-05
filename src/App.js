@@ -17,16 +17,24 @@ function App() {
   return (
     <div className="App">
       <Loader />
-      <Header />
-      <Inicio />
-      {/* <AvisoDePrivacidad /> */}
-      <Nosotros />
-      <Servicios />
-      <Proyectos />
-      { state.abierto 
-        && <Contacto />
+      
+      { state.abierto ?
+        <Contacto />
+        : <>
+            <Header />
+            <Inicio />
+            <Nosotros />
+            <Servicios />
+            <Proyectos />
+            <Footer />
+          </>
       }
-      <Footer />
+
+      {
+        state.aviso &&
+        <AvisoDePrivacidad />
+      }
+
     </div>
   );
 }

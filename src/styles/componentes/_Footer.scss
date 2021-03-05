@@ -355,6 +355,13 @@
 
 }
 
+.footerAvisoPrivacidad{
+    cursor: pointer;
+}
+.footerAvisoPrivacidad:hover{
+    text-decoration: underline;
+}
+
 .footerEmpresaLinkMovil{
     display: none;
     font-size: 10px;

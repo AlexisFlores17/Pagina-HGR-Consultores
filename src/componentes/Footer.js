@@ -1,6 +1,14 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { abrirAviso } from '../actions/contactoActions';
 
 export const Footer = () =>{
+
+    const dispatch = useDispatch();
+
+    const clickAviso = () => {
+        dispatch( abrirAviso() );
+    }
 
     return(
         <div className="footerContenedor">
@@ -37,7 +45,7 @@ export const Footer = () =>{
             <div className="footerParteInferior" >
                 <div className="footerEmpresa" >&copy; {new Date().getFullYear()} HGR consultores </div>
                 <div className="footerEmpresaLink" >Suported by <a href="https://lsdlab.com.mx/" target="_blank" > Light & Sound Disruptive Lab</a> </div>
-                <div className="footerAvisoPrivacidad" > Aviso de Privacidad</div>
+                <div className="footerAvisoPrivacidad" onClick={() => clickAviso()} > Aviso de Privacidad</div>
             </div>
             <div className="footerEmpresaLinkMovil" >Suported by <a href="https://lsdlab.com.mx/" target="_blank" className="ml-1"> Light & Sound Disruptive Lab</a> </div>
         </div>
