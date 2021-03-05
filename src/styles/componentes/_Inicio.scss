@@ -15,7 +15,7 @@
             height: 100vh;
             .content{
                 position: absolute;
-                top: 350px;
+                bottom: 10vh;
                 width: 700px;
                 font-style: normal;
                 font-weight: normal;
@@ -25,6 +25,9 @@
                 background-color: rgba($color:#fff, $alpha: 0.5);                              
                 padding: 5px;
                 padding-bottom: 0;
+                @media screen and (max-width: 400px){
+                    bottom: 30vh;
+                }
                 .bottom-line{                    
                     font-size: 20px;
                     
