@@ -5,7 +5,7 @@ import { ServiciosQuote } from './ServiciosComponentes/ServiciosQuote';
 export const Servicios = () =>{
 
     return(
-        <div className="serviciosMain">
+        <div className="serviciosMain" id="servicios">
             <div className="serviciosTitulo">
                 Servicios
             </div>

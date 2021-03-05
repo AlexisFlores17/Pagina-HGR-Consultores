@@ -1,5 +1,13 @@
 .container{
     // background-color: green;
+    a{
+        color: black;
+
+    }        
+    a:hover{
+        color: white;
+        text-decoration: none;
+    }
     .wrapper{
         // background-color: greenyellow;
         .home{

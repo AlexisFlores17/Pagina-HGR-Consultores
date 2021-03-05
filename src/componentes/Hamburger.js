@@ -93,6 +93,10 @@ export default function Hamburger({state}) {
         dispatch( abrirContacto() )
     }
 
+    const clickMenuHamburguesa = () =>{
+
+    }
+
     return (
         <div ref = {el => (menu = el)} className="hamburger-menu">
             <div ref = {el => (revealMenuBackgroud = el)} className="menu-secondary-background-color"></div> 
@@ -102,9 +106,9 @@ export default function Hamburger({state}) {
                         <div className="menu-links">
                             <nav>
                                 <ul>
-                                    <li ref = {el => (line1 = el)} className= "menuLi" >inicio</li>
-                                    <li ref = {el => (line2 = el)} className= "menuLi" >nosotros</li>
-                                    <li ref = {el => (line3 = el)} className= "menuLi" >servicios</li>
+                                    <li ref = {el => (line1 = el)} className= "menuLi" ><a href="#inicio" >inicio</a></li>
+                                    <li ref = {el => (line2 = el)} className= "menuLi" ><a href="#nosotros" >nosotros</a></li>
+                                    <li ref = {el => (line3 = el)} className= "menuLi" ><a href="#servicios">servicios</a></li>
                                     <li ref = {el => (line4 = el)} className= "menuLi" onClick={() => clickContacto()} >contacto</li>
                                 </ul>
                             </nav>
