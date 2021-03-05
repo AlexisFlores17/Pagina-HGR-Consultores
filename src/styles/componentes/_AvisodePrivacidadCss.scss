@@ -3,7 +3,6 @@ $dorado: #BF9000;
 .avisoDePrivacidadContainer{
     width: 100%;
     min-height: 100vh;
-    position: fixed;
     top: 0;
     z-index: 10000;
     background-color: $dorado;
@@ -13,6 +12,7 @@ $dorado: #BF9000;
     display: flex;
     flex-flow: column nowrap;
     margin: 0 50px;
+    padding-bottom: 50px;
     align-items: center;
     justify-content: center;
     color:white;

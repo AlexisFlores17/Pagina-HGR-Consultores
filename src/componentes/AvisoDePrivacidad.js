@@ -11,6 +11,7 @@ export const AvisoDePrivacidad = () => {
         dispatch(cerrarAviso());
     }
 
+
     return (
         <div className="avisoDePrivacidadContainer">
             <div className="btn-cerrar">

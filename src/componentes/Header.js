@@ -1,6 +1,11 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
+import { useSelector } from 'react-redux';
 import Hamburger from './Hamburger'
+
 export const Header = () =>{
+
+    const redux = useSelector(state => state.contactoReducer)
+
     let myHeader = useRef(null)
 
     const [state, setState] = useState({
@@ -21,7 +26,6 @@ export const Header = () =>{
             })
             
         }else if(state.clicked === true){
-            console.log(state)
             setState({
                 clicked: !state.clicked,
                 menuName: "Menú"
@@ -44,26 +48,32 @@ export const Header = () =>{
         }, 1200)
     }
 
-    const changeMenuState = () => {
-        setState({
-            // initial: false,
-            clicked: !state.clicked,
-            menuName: "Menú"
-        })        
-   };
-
     var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if ( currentScrollPos > 150) {
-        if (prevScrollpos > currentScrollPos) {
-            myHeader.style.top = "0";
-        } else {
-            myHeader.style.top = "-100px";
+
+    useEffect(() => {
+        if( redux.aviso ){
+            myHeader.style.display = "none"
         }
-    }
-    
-    prevScrollpos = currentScrollPos;
+        return () => {
+            
+        }
+    }, [redux.aviso])
+
+
+    window.onscroll = function() {
+        if(state.clicked === false || state.initial === false){
+            var currentScrollPos = window.pageYOffset;
+            if ( currentScrollPos > 150) {
+                if (prevScrollpos > currentScrollPos) {
+                    myHeader.style.top = "0";
+                } else {
+                    myHeader.style.top = "-100px";
+                }
+            }
+            
+            prevScrollpos = currentScrollPos;
+        }
+        
     }
 
 

@@ -17,17 +17,19 @@ function App() {
   return (
     <div className="App">
       <Loader />
-      
-      { (!state.abierto && !state.aviso) ?
+      <Header />
+      { (!state.abierto && !state.aviso) &&
         <>
-          <Header />
           <Inicio />
           <Nosotros />
           <Servicios />
           <Proyectos />
           <Footer />
         </>
-        : <Contacto />
+      }
+
+      {
+        state.abierto && <Contacto />
       }
 
       {
