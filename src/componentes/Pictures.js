@@ -29,8 +29,8 @@ export default function Pictures() {
     
 
     useEffect(() => {    
-        let isMounted = false
-        if(isMounted){
+        let isMounted = true
+        if(isMounted === true){
             console.log("mounted")
             firstFade(refImg1, 6000)      
             firstFade(refImg2, 4000)        
@@ -42,7 +42,8 @@ export default function Pictures() {
         }
 
         return () => {
-            isMounted = true;
+            console.log("unmounting")
+            isMounted = false;
           };
 
     }, [])
