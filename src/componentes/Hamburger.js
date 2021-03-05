@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { abrirContacto } from '../actions/contactoActions';
 
 
-export default function Hamburger({state}) {
+export default function Hamburger({state, handleMenu}) {
     
     //vars for animating Dom
     let menu = useRef(null)
@@ -19,37 +19,8 @@ export default function Hamburger({state}) {
 
 
     useEffect(() => {
-        if(state.clicked === false){
-            //close menu
-            gsap.to([revealMenu, revealMenuBackgroud], {
-                duration: 0.8,
-                width: 0,
-                x: "50vw",                
-                ease: "power3.inOut",
-                stagger: {
-                    amount: 0.07
-                }   
-            });
-            gsap.to(menu, {
-                duration: 1,
-                css: {display: 'none'}
-            })
-        }else if(state.clicked === true || state.clicked === true && state.initial === null){
-            gsap.to(menu, {
-                duration: 0,
-                css: {display: "block"}
-            })
-            gsap.to([revealMenuBackgroud, revealMenu], {
-                duration: 0,
-                opacity: 1,
-                width: "100%",
-                x: 0
-            })
-            staggerReveal(revealMenuBackgroud, revealMenu)
-            staggerText(line1, line2, line3, line4)
-            fadeInUp(aviso)
-        }
-        
+        openCloseMenu()
+        console.log("estado----", state)
     },[state])
 
     const staggerReveal = (node1, node2) => {
@@ -93,8 +64,38 @@ export default function Hamburger({state}) {
         dispatch( abrirContacto() )
     }
 
-    const clickMenuHamburguesa = () =>{
-
+    const openCloseMenu = () => {
+        
+        if(state.clicked === false){
+            //close menu
+            gsap.to([revealMenu, revealMenuBackgroud], {
+                duration: 0.8,
+                width: 0,
+                x: "50vw",                
+                ease: "power3.inOut",
+                stagger: {
+                    amount: 0.07
+                }   
+            });
+            gsap.to(menu, {
+                duration: 1,
+                css: {display: 'none'}
+            })
+        }else if(state.clicked === true || state.clicked === true && state.initial === null){
+            gsap.to(menu, {
+                duration: 0,
+                css: {display: "block"}
+            })
+            gsap.to([revealMenuBackgroud, revealMenu], {
+                duration: 0,
+                opacity: 1,
+                width: "100%",
+                x: 0
+            })
+            staggerReveal(revealMenuBackgroud, revealMenu)
+            staggerText(line1, line2, line3, line4)
+            fadeInUp(aviso)
+        }
     }
 
     return (
@@ -106,9 +107,9 @@ export default function Hamburger({state}) {
                         <div className="menu-links">
                             <nav>
                                 <ul>
-                                    <li ref = {el => (line1 = el)} className= "menuLi" ><a href="#inicio" >inicio</a></li>
-                                    <li ref = {el => (line2 = el)} className= "menuLi" ><a href="#nosotros" >nosotros</a></li>
-                                    <li ref = {el => (line3 = el)} className= "menuLi" ><a href="#servicios">servicios</a></li>
+                                    <li ref = {el => (line1 = el)} className= "menuLi" onClick={handleMenu}><a href="#inicio" >inicio</a></li>
+                                    <li ref = {el => (line2 = el)} className= "menuLi" onClick={handleMenu}><a href="#nosotros" >nosotros</a></li>
+                                    <li ref = {el => (line3 = el)} className= "menuLi" onClick={handleMenu}><a href="#servicios">servicios</a></li>
                                     <li ref = {el => (line4 = el)} className= "menuLi" onClick={() => clickContacto()} >contacto</li>
                                 </ul>
                             </nav>

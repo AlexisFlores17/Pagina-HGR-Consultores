@@ -11,7 +11,7 @@ export const Header = () =>{
 
     const [disabled, setDisabled] = useState(false)
 
-    const handleMenu = () => {
+    const handleMenu = () => {        
         disableMenu()
         if(state.initial === false){
             setState({
@@ -21,6 +21,7 @@ export const Header = () =>{
             })
             
         }else if(state.clicked === true){
+            console.log(state)
             setState({
                 clicked: !state.clicked,
                 menuName: "Menú"
@@ -33,7 +34,7 @@ export const Header = () =>{
                 menuName: "Cerrar"
             })
             
-        }
+        }        
     }
 
     const disableMenu = () => {
@@ -42,6 +43,14 @@ export const Header = () =>{
             setDisabled(false)
         }, 1200)
     }
+
+    const changeMenuState = () => {
+        setState({
+            // initial: false,
+            clicked: !state.clicked,
+            menuName: "Menú"
+        })        
+   };
 
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
@@ -68,12 +77,12 @@ export const Header = () =>{
                         </div>
                         
                         <div className="menu">
-                            <button disabled={disabled} onClick={handleMenu}>{state.menuName}</button>
+                            <button disabled={disabled} onClick={handleMenu} >{state.menuName}</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <Hamburger state={state}/>
+            <Hamburger state={state} handleMenu= {handleMenu}/>
         </header>
       )
 }
