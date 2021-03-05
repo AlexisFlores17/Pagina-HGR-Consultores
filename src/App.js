@@ -7,6 +7,7 @@ import {Proyectos}  from "./componentes/Proyectos";
 import {Contacto}   from "./componentes/Contacto";
 import {Footer}     from "./componentes/Footer";
 import { Inicio } from "./componentes/Inicio";
+import Loader from "./componentes/Loader";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div className="App">
+      <Loader />
       <Header />
       <Inicio />
       <Nosotros />
