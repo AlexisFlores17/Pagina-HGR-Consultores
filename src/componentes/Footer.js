@@ -7,7 +7,12 @@ export const Footer = () =>{
     const dispatch = useDispatch();
 
     const clickAviso = () => {
+        scrollTop()
         dispatch( abrirAviso() );
+    }
+
+    const scrollTop = () => {
+        window.scrollTo(0, 0);
     }
 
     return(

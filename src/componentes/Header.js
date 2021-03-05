@@ -53,6 +53,8 @@ export const Header = () =>{
     useEffect(() => {
         if( redux.aviso ){
             myHeader.style.display = "none"
+        }else{
+            myHeader.style.display = "inherit"
         }
         return () => {
             
