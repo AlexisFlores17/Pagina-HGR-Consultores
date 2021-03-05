@@ -29,7 +29,7 @@ export default function Pictures() {
     
 
     useEffect(() => {    
-        let isMounted = false
+        let isMounted = true
         if(isMounted){
             console.log("mounted")
             firstFade(refImg1, 6000)      
@@ -42,7 +42,7 @@ export default function Pictures() {
         }
 
         return () => {
-            isMounted = true;
+            isMounted = false;
           };
 
     }, [])
