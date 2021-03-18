@@ -1,5 +1,5 @@
 
 # Pagina Web HGR Consultores
 
-Proyecto web creao con React.js
+Proyecto web creado con React.js
 
