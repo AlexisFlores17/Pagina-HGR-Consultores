@@ -44,7 +44,7 @@ export const ServiciosItem7 = (props) =>{
                         </div>  
                         <div className="menuListaItem">
                             <div className="menuListaNumero">4</div>
-                            <div className="menuListaNombre">Eficencia de recursos financieros</div>
+                            <div className="menuListaNombre">Eficiencia de recursos financieros</div>
                         </div>    
                     </div>              
                 </div>
