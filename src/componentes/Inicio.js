@@ -21,8 +21,7 @@ export const Inicio = () =>{
                         <div className="content" >
                             <h5>
                                 Servicios y asesoría 
-                                contable, fiscal y 
-                                financiera
+                                contable y fiscal
                             </h5>
                             <div className="bottom-line">
                                 <div className="line"></div>
